@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+    <meta name="keywords" content="{$Think.CONFIG.keywords}" />
+    <meta name="description" content="{$Think.CONFIG.description}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <include file="Public/head" />
+    <link rel="stylesheet" href="__PUBLIC__/Ln/css/admin.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Ln/css/amazeui.min.css" />
+    <style type="text/css">
+        body{font-size:1.3rem}
+        .show_button{border: 1px solid #999;width:100px;float: left;text-align: center;margin:0 10px 10px 0;line-height: 30px;cursor: pointer;}
+        .ccc{background-color: #ccc;}
+    </style>
+</head>
+
+<body class="no-skin">
+<include file="Public/header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    <include file="Public/sidebar" />
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- #section:basics/content.breadcrumbs -->
+            <include file="Public/breadcrumbs" />
+            <!-- /section:basics/content.breadcrumbs -->
+            <div class="page-content">
+                <include file="Public/set" />
+                <!-- /section:settings.box -->
+                <div class="row">
+
+                    <div class="admin-content">
+                        <div class="am-g " style="margin-top:20px;">
+                            <div class="am-u-md-8">
+                                <div class="am-panel am-panel-default">
+                                    <div class="am-panel-hd am-cf"><!--域名列表(未充值跳转页面)--></div>
+                                    <div id="collapse-panel-4" class="am-panel-bd am-collapse am-in">
+                                        <div class="weixin_list margin-0" style="padding-left:20px;">
+                                            <div class="weixin am-g"  >
+                                                <table class="am-table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="width:4%" class="tb-o"> ID</th>
+                                                        <th class="tb-t">域名</th>
+                                                        <th style="width:10%" class="tb-th">状态</th>
+                                                        <th class="tb-f">操作</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="app">
+                                                    <volist name="rows" id="row">
+                                                        <tr class="show_1 qccode">
+                                                            <td class="tb-o">{$row['id']}</td>
+                                                            <td  class="tb-t">{$row['domain_name']}</td>
+                                                            <if condition="$row['status'] eq 1"><td class="tb-th" style="color: red">启用</td><else/><td class="tb-th" style="color: green">备用</td></if>
+                                                            <td class="tb-f">
+                                                                <a class="btn-btn" href="{:U('domain_save',['id'=>$row['id'],'status'=>1])}">启用</a>
+                                                                <a class="btn-btn" href="{:U('domain_save',['id'=>$row['id'],'status'=>2])}">备用</a>
+                                                                <a class="btn-btn" href="{:U('delete',['id'=>$row['id']])}">删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </volist>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="am-u-md-4">
+                                <div class="am-panel am-panel-default">
+                                    <div class="am-panel-hd am-cf">添加域名</div>
+                                    <div id="collapse-panel-4" class="am-panel-bd am-collapse am-in">
+                                        <form class="am-form am-form-horizontal" action="{:U('add')}" method="post" >
+                                            <div class="am-form-group">
+                                                <label for="doc-ipt-3"class="am-u-sm-2 am-form-label">域名</label>
+                                                <div class="am-u-sm-10">
+                                                    <input type="text"  name="domain_name" id="doc-ipt-3" placeholder="输入域名，多域名请用“,”分隔(小写)">
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="doc-ipt-3" name="k" class="am-u-sm-2 am-form-label">状态</label>
+                                                <div class="am-u-sm-10">
+                                                    <select id="cid" name="status" class="form-control" size="1">
+                                                        <!--<option value="0">启用</option>-->
+                                                        <!--<option value="1">关闭</option>-->
+                                                        <option value="2">备用</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group">
+                                                <div class="am-u-sm-10 am-u-sm-offset-2">
+                                                    <button type="submit" class="am-btn am-btn-default">添加</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {$page}
+                </div><!-- /.page-content -->
+            </div>
+        </div><!-- /.main-content -->
+        <include file="Public/footer" />
+    </div>
+</div>
+<include file="Public/footerjs" />
+</body>
+</html>

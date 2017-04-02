@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+    <meta name="keywords" content="{$Think.CONFIG.keywords}"/>
+    <meta name="description" content="{$Think.CONFIG.description}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <script src="__PUBLIC__/Ln/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Ln/js/clipboard.min.js"></script>
+    <include file="Public/head"/>
+    <style type="text/css">
+        .media-table tbody tr td {
+            border: none;
+        }
+
+        button, input, optgroup, select, textarea {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: none !important;
+        }
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .btn-blue {
+            border-radius: 2px;
+            cursor: pointer;
+            border: none;
+            background-color: #438eb9 !important;
+        }
+
+        .margin-top {
+            /*margin-top: 30px;*/
+        }
+
+        .photo {
+            width: 80%;
+            /*height: 150px;*/
+            display: block;
+            margin: 5px auto;
+            border: none!important;
+        }
+        .photo1 {
+            text-align: center;
+            /*width: 80%;*/
+            /*height: 150px;*/
+            display: block;
+            margin: 5px auto;
+            border: none!important;
+        }
+
+        .photo img {
+            border: none !important;
+        }
+        .photo1 img{
+            /*width: 100%;*/
+            border: none !important;
+        }
+
+    </style>
+</head>
+<body class="no-skin">
+<include file="Public/header"/>
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    <include file="Public/sidebar" />
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- /section:basics/content.breadcrumbs -->
+            <div class="main-content">
+                <div class="main-content-inner">                    <!-- #section:basics/content.breadcrumbs -->
+                    <include file="Public/breadcrumbs"/>                    <!-- /section:basics/content.breadcrumbs -->
+                    <div class="page-content">
+<div class="panel-group" id="accordion">
+	<if condition="($ucpstype eq 1) or ($ucpstype eq 0)">
+    <div class="panel panel-default">
+		<a data-toggle="collapse" data-parent="#accordion"  href="#collapseTwo">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					微信朋友圈(点击显示)
+				</h4>
+			</div>
+		</a>
+        <div id="collapseTwo" class="panel-collapse collapse in">
+		<div class="panel-body">
+               <div class="panel panel-default">
+					<div class="panel-heading"><h4><span class="fa fa-link"> 微信朋友圈</span></h4></div>
+					<div class="row detail-package navbar-btn">
+						<div class="col-xs-12">
+							<div class="ml-lg col-sm-11">
+								<table class="table media-table">
+									<tbody>
+									<tr>
+										<div class="help-block mt-lg">只能用于微信朋友圈推广</div>
+										<td class=""><input id="wxt-link" class="copy-text" type="text" class="form-control"  value="{$frend_domain}"></td>
+									</tr>
+									<tr>
+										<td class="btn-copy">
+											<div class="btn-group margin-top">
+												<button class="btn btn-blue J-copy-tbn"  data-clipboard-text="{$frend_domain}"
+														data-clipboard-target="#wxt-link">
+													复制地址
+												</button>
+											</div>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div>
+            </div>
+            
+        </div>
+    </div>
+	</if>
+		<if condition="($ucpstype eq 3) or ($ucpstype eq 0) or ($ucpstype eq 1)  or ($ucpstype eq 2)">
+
+    <div class="panel panel-default">
+		<a data-toggle="collapse" data-parent="#accordion"   href="#collapseThree">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					微信群推广(点击显示)
+				</h4>
+			</div>
+		</a>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="panel panel-default">
+					<div class="panel-heading"><h4><span class="fa fa-link"> 直链推广</span></h4></div>
+					<div class="row detail-package navbar-btn">
+						<div class="col-xs-12">
+							<div class="ml-lg col-sm-11">
+								<table class="table media-table">
+									<tbody>
+									<tr>
+										<td class="wxg-link" colspan="2">
+											<div class="help-block mt-lg">直链推广（可以分享到微信群+qq群+米聊等一切有点击的地方，也可以作为公众号阅读原文链接）</div>
+											<input id="wxg-link" class="copy-text"  value="http://{$group_domain.0.url}/{$time}/{$uid}.gif">
+										</td>
+									</tr>
+									<tr>
+										<td class="btn-copy">
+											<div class="btn-group margin-top">
+												<button class="btn btn-blue J-copy-tbn"  data-clipboard-text="http://{$group_domain.0.url}/share/wx/{$uid}.gif"
+														data-clipboard-target="#wxg-link">
+													复制地址
+												</button>
+											</div>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4><span class="fa fa-link"> js推广（适用于自媒体广告位）<span style="color: red;">可在uid={$uid}后添加pic图片地址参数来使用自己的外链图片，例如: http://www.hhjzfj.com/Index/Js/index?uid={$uid}&pic=http://js.cywl5.com/640200/31.gif</span></span></h4></div>
+					<div class="row detail-package navbar-btn">
+						<div class="col-xs-12">
+							<div class="ml-lg col-sm-11">
+								<table class="table media-table">
+									<tbody>
+									<tr>
+										<td class="" colspan="2">
+											<div class="help-block mt-lg">JS代码</div>
+											<!--<input id="js-link" class="copy-text"  value="<script type='text/javascript' src='http://{$moive_domain.0.url}/jsad/{$uid}.gif'></script>">-->
+											<input id="js-link" class="copy-text"  value='<script type="text/javascript" src="http://www.hhjzfj.com/Index/Js/index?uid={$uid}"></script>'>
+											
+										</td>
+									</tr>
+									<tr>
+										<td class="btn-copy">
+											<div class="btn-group margin-top">
+												<button class="btn btn-blue J-copy-tbn"  data-clipboard-text='<script type="text/javascript" src="http://www.hhjzfj.com/Index/Js/index?uid={$uid}"></script>'
+														data-clipboard-target="#js-link">
+													复制地址
+												</button>
+											</div>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4><span class="fa fa-link"> 二维码推广（把二维码做成软文推广或合成美图推广）</span></h4></div>
+					<div class="row detail-package navbar-btn">
+						<div class="col-xs-12">
+							<div class="ml-lg col-sm-11">
+								<table class="table media-table">
+									<tbody>
+									<tr>
+										<td class="photo1" colspan="2">
+											<img src="{$generalize.img_url}">
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4><span class="fa fa-link"> 推广图片</span></h4></div>
+					<div class="row detail-package navbar-btn">
+						<div class="col-xs-12">
+							<div class="ml-lg col-sm-11">
+
+								<div class="col-md-4 center panel-group">
+									<img class="img-responsive" src="http://{$moive_domain.0.url}{$tgqc[0]}">
+									<input id='img-link-0' class="copy-text" value="http://{$moive_domain.0.url}{$tgqc[0]}">
+									<button class="btn btn-blue J-copy-tbn"  data-clipboard-text="http://{$moive_domain.0.url}{$tgqc[0]}"
+											data-clipboard-target="#img-link-0">
+										复制地址
+									</button>
+								</div>
+								<div class="col-md-4 center panel-group">
+									<img class="img-responsive" src="http://{$moive_domain.0.url}{$tgqc[1]}">
+									<input id='img-link-1' class="copy-text" value="http://{$moive_domain.0.url}{$tgqc[1]}">
+									<button class="btn btn-blue J-copy-tbn"  data-clipboard-text="http://{$moive_domain.0.url}{$tgqc[1]}"
+											data-clipboard-target="#img-link-1">
+										复制地址
+									</button>
+								</div>
+								<div class="col-md-4 center panel-group">
+									<img class="img-responsive" src="http://{$moive_domain.0.url}{$tgqc[2]}">
+									<input id='img-link-2' class="copy-text" value="http://{$moive_domain.0.url}{$tgqc[2]}">
+									 <button class="btn btn-blue J-copy-tbn"  data-clipboard-text="http://{$moive_domain.0.url}{$tgqc[2]}"
+											data-clipboard-target="#img-link-2">
+										复制地址
+									</button>
+								</div>
+							</div>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div>
+            </div>
+        </div>
+    </div>
+	</if>
+</div>
+                        <if condition="($ucpstype eq 3) or ($ucpstype eq 0) or ($ucpstype eq 1)  or ($ucpstype eq 2)">
+
+                            <!--<div class="panel panel-default">-->
+                            <!--<div class="panel-heading"><h4><span class="fa fa-link"> 文案推广地址</span></h4></div>-->
+                            <!--<div class="row detail-package navbar-btn">-->
+                            <!--<div class="col-xs-12">-->
+                            <!--<div class="ml-lg col-sm-11">-->
+                            <!--<a href="http://{$moive_domain}/c2vx57pcoalv3k27/b4c130dcd3d6ce60.php?qr={$generalize.qr_url}"-->
+                            <!--target="_blank">不想一直单身就看看吧~</a>-->
+                            <!--<table class="table media-table">-->
+                            <!--<tbody>-->
+                            <!--<tr></tr>-->
+                            <!--<tr>-->
+                            <!--<td class=""><input type="text" class="form-control" value="http://{$moive_domain}/c2vx57pcoalv3k27/b4c130dcd3d6ce60.php?qr={$generalize.qr_url}">-->
+                            <!--</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                            <!--<td class="btn-copy">-->
+                            <!--<div class="btn-group margin-top">-->
+                            <!--<button class="btn btn-blue J-copy-tbn"-->
+                            <!--data-clipboard-target="http://cytzsh.com/cps_article/528a82d86b653962?doc=b4c130dcd3d6ce60&amp;v1">-->
+                            <!--复制地址-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
+                            <!--</table>-->
+                            <!--<a href="http://{$moive_domain}/c2vx57pcoalv3k27/8a882cfdce019287.php?qr={$generalize.qr_url}"-->
+                            <!--target="_blank">当年班花在我胯.下.承.欢......十八岁以下</a>-->
+                            <!--<table class="table media-table">-->
+                            <!--<tbody>-->
+                            <!--<tr></tr>-->
+                            <!--<tr>-->
+                            <!--<td class=""><input class="copy-text" type="text" class="form-control"  value="http://{$moive_domain}/c2vx57pcoalv3k27/8a882cfdce019287.php?qr={$generalize.qr_url}"></td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                            <!--<td class="btn-copy">-->
+                            <!--<div class="btn-group margin-top">-->
+                            <!--<button class="btn btn-blue J-copy-tbn"-->
+                            <!--data-clipboard-target="http://cytzsh.com/cps_article/528a82d86b653962?doc=b4c130dcd3d6ce60&amp;v1">-->
+                            <!--复制地址-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
+                            <!--</table>-->
+                            <!--</div>-->
+                            <!--</div>&lt;!&ndash; /.col &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+                            <!--</div>-->
+                            <!--<div class="panel panel-default">
+                                <div class="panel-heading"><h4><span class="fa fa-link"> 直链推广（可以分享到微信群+qq群+米聊等一切有点击的地方，也可以作为公众号阅读原文链接）</span></h4></div>
+                                <div class="row detail-package navbar-btn">
+                                    <div class="col-xs-12">
+                                        <div class="ml-lg col-sm-11">
+                                            <table class="table media-table">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="photo1" colspan="2">
+                                                <input id='dr-link-1' class="copy-text" value="http://{$moive_domain.0.url}/link/ad/{$uid}.gif">
+                                                <button class="btn btn-blue J-copy-tbn"  data-clipboard-text="http://{$moive_domain.0.url}/link/ad/{$uid}.gif"
+                                                        data-clipboard-target="#dr-link-1">
+                                                    复制地址
+                                                </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </if>
+                        <if condition="($cpstype eq 2) or ($cpstype eq 0)">
+                            <!--<div class="panel panel-default">
+                                <div class="panel-heading"><h4><span class="fa fa-link"> 微信群</span></h4></div>
+                                <div class="row detail-package navbar-btn">
+                                    <div class="col-xs-12">
+                                        <div class="ml-lg col-sm-11">
+                                            <table class="table media-table">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="wxg-link" colspan="2">
+                                                        <div class="help-block mt-lg">只能用于微信群推广</div>
+                                                        <input id="wxg-link" class="copy-text"  value="http://{$group_domain.0.url}/share/wx/{$uid}.gif">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="btn-copy">
+                                                        <div class="btn-group margin-top">
+                                                            <button class="btn btn-blue J-copy-tbn"  data-clipboard-text="http://{$group_domain.0.url}/share/wx/{$uid}.gif"
+                                                                    data-clipboard-target="#wxg-link">
+                                                                复制地址
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </if>
+                    </div><!-- /.page-content -->
+                </div>
+            </div><!-- /.main-content -->
+            <include file="Public/footer"/>
+        </div><!-- /.main-container -->
+        <div class="alertMassage">
+            <span>是否复制到剪切板</span>
+            <span id="msg"></span>
+
+            <p>
+                <button class="enter" value="1" onclick="">确认</button>
+                <button class="del" value="0">取消</button>
+            </p>
+        </div>
+        <script>
+
+            $(function () {
+                $(".btn-blue").click(function () {
+                    var Url = $(this).parents("tr").prev().find("input").val();
+                    console.log(Url);
+                    //copyToClipboard(Url);
+                    //$(".alertMassage").css({display:"block"});
+                });
+                
+                $(".copy-text").on("click", function () {
+                   $(this).select();
+                });
+                $(".copy-text").on("focus", function () {
+                   $(this).select();
+                });
+
+                var clipboard = new Clipboard('.J-copy-tbn');
+                clipboard.on('success', function(e) {
+                    alert('复制成功');
+
+                    e.clearSelection();
+                });
+
+                clipboard.on('error', function(e) {
+                    alert('复制失败,请收工选择复制');
+                });
+            })
+            function copyToClipboard(maintext) {
+                if (window.clipboardData){
+                    window.clipboardData.setData("Text", maintext);
+                }else if (window.netscape){
+                    try{
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    }catch(e){
+                        alert("该浏览器不支持一键复制！n请手工复制文本框链接地址～");
+                    }
+
+                    var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+                    if (!clip) return;
+                    var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+                    if (!trans) return;
+                    trans.addDataFlavor('text/unicode');
+                    var str = new Object();
+                    var len = new Object();
+                    var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+                    var copytext=maintext;
+                    str.data=copytext;
+                    trans.setTransferData("text/unicode",str,copytext.length*2);
+                    var clipid=Components.interfaces.nsIClipboard;
+                    if (!clip) return false;
+                    clip.setData(trans,null,clipid.kGlobalClipboard);
+                }
+//        console.warn(maintext);
+//        alert(maintext);
+                $("#msg").text(maintext);
+                $(".del").click(function(){
+                    $(".alertMassage").hide(2);
+                    $("#msg").text("");
+                });
+                $(".enter").click(function(){
+                    $(".alertMassage").hide(2);
+                })
+            }
+        </script>
+        <include file="Public/footerjs"/>
+</body>
+</html>

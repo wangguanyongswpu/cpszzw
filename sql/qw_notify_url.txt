@@ -1,0 +1,13 @@
+CREATE TABLE `qw_notify_url` (
+`id`  int(11) NOT NULL AUTO_INCREMENT ,
+`url`  varchar(225) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`status`  tinyint(1) NOT NULL DEFAULT 0 COMMENT '0¹Ø±Õ 1¿ªÆô' ,
+`name`  varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+AUTO_INCREMENT=4
+ROW_FORMAT=COMPACT
+;
+

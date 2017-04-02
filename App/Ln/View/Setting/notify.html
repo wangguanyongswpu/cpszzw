@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>{$current['title']}-{$Think.CONFIG.title}</title>
+
+		<meta name="keywords" content="{$Think.CONFIG.keywords}" />
+		<meta name="description" content="{$Think.CONFIG.description}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<include file="Public/head" />
+   </head>
+
+	<body class="no-skin">
+		<include file="Public/header" />
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<include file="Public/sidebar" />
+			<div class="main-content">
+				<div class="main-content-inner">
+					<!-- #section:basics/content.breadcrumbs -->
+					<include file="Public/breadcrumbs" />
+
+					<!-- /section:basics/content.breadcrumbs -->
+					<div class="page-content PageP">
+						<include file="Public/set" />
+
+						<!-- /section:settings.box -->
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+									<form class="form-horizontal" id="form" role="form" method="post" action="{:U('add')}">
+									<div class="form-group">
+										<label class="block col-sm-1 control-label no-padding-right" for="form-field-1"> 异步通知地址 </label>
+										<div class="col-sm-9 block">
+											<input type="text" name="url"  class="block col-xs-10 col-sm-5" value="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="block col-sm-1 control-label no-padding-right" for="form-field-1"> 名称 </label>
+										<div class="col-sm-9 block">
+											<input type="text" name="name"  class="block col-xs-10 col-sm-5" value="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="block col-sm-1 control-label no-padding-right" for="form-field-1"> 名称 </label>
+										<div class="col-sm-9 block">
+											<input type="radio" name="status" checked="checked" value="1">开启
+											<input type="radio" name="status" value="0">关闭
+										</div>
+									</div>
+
+									
+									<div class="col-md-offset-2 col-md-9">
+										<button class="btn btn-info submit btn-line" type="button">
+											<i class="icon-ok bigger-110"></i>
+											提交
+										</button>
+
+										&nbsp; &nbsp; &nbsp;
+										<button class="btn btn-line" type="reset">
+											<i class="icon-undo bigger-110"></i>
+											重置
+										</button>
+									</div>
+								</form>
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+						<div class="row">
+							<table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>名称</th>
+                                        <th>链接</th>
+                                        <th>状态</th>
+                                        <th class="center">操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist name="list" id="val">
+                                        <tr>
+                                            <td>{$val['id']}</td>
+                                            <td>{$val['name']}</td>
+                                            <td>{$val['url']}</td>
+                                            <td><?= $val['status'] == 1 ? '启用' : '关闭' ; ?></td>
+                                            <td class="center">
+                                            <a href="{:U('notify_update',['id'=>$val['id']])}">修改</a>&nbsp;
+                                            <a class="del" href="{:U('notify_del',['id'=>$val['id']])}" title="删除">删除</a>&nbsp;
+                                            <a href="{:U('notify_handel',['status' => $val['status'] , 'id' => $val['id'] ])}"><?= $val['status'] == 1 ? '关闭' : '启用' ; ?></a>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                    </tbody>
+                                </table>
+						</div>
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+			<include file="Public/footer" />
+			
+		</div><!-- /.main-container -->
+
+		<include file="Public/footerjs" />
+		
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+		$(".submit").click(function(){
+			$("#form").submit();
+		})
+		</script>
+	</body>
+</html>

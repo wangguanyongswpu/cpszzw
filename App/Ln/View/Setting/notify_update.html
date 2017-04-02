@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>{$current['title']}-{$Think.CONFIG.title}</title>
+
+		<meta name="keywords" content="{$Think.CONFIG.keywords}" />
+		<meta name="description" content="{$Think.CONFIG.description}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<include file="Public/head" />
+   </head>
+
+	<body class="no-skin">
+		<include file="Public/header" />
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<include file="Public/sidebar" />
+			<div class="main-content">
+				<div class="main-content-inner">
+					<!-- #section:basics/content.breadcrumbs -->
+					<include file="Public/breadcrumbs" />
+
+					<!-- /section:basics/content.breadcrumbs -->
+					<div class="page-content PageP">
+						<include file="Public/set" />
+
+						<!-- /section:settings.box -->
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+									<form class="form-horizontal" id="form" role="form" method="post" action="">
+									<div class="form-group">
+										<label class="block col-sm-1 control-label no-padding-right" for="form-field-1"> 异步通知地址 </label>
+										<div class="col-sm-9 block">
+											<input type="text" name="url"  class="block col-xs-10 col-sm-5" value="{$result['url']}">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="block col-sm-1 control-label no-padding-right" for="form-field-1"> 名称 </label>
+										<div class="col-sm-9 block">
+											<input type="text" name="name"  class="block col-xs-10 col-sm-5" value="{$result['name']}">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="block col-sm-1 control-label no-padding-right" for="form-field-1"> 名称 </label>
+										<div class="col-sm-9 block">
+											<input type="radio" name="status" <?= $result['status'] == 1 ? 'checked' : '' ;?> value="1">开启
+											<input type="radio" name="status" <?= $result['status'] == 0 ? 'checked' : '' ;?> value="0">关闭
+										</div>
+									</div>
+									<input type="hidden" name="id" value="{$result['id']}">
+									<div class="col-md-offset-2 col-md-9">
+										<button class="btn btn-info submit btn-line" type="button">
+											<i class="icon-ok bigger-110"></i>
+											提交
+										</button>
+
+										&nbsp; &nbsp; &nbsp;
+										<button class="btn btn-line" type="reset">
+											<i class="icon-undo bigger-110"></i>
+											重置
+										</button>
+									</div>
+								</form>
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+			<include file="Public/footer" />
+			
+		</div><!-- /.main-container -->
+
+		<include file="Public/footerjs" />
+		
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+		$(".submit").click(function(){
+			$("#form").submit();
+		})
+		</script>
+	</body>
+</html>

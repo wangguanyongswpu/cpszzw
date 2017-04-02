@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>{$current['title']}-{$Think.CONFIG.title}</title>
+
+		<meta name="keywords" content="{$Think.CONFIG.keywords}" />
+		<meta name="description" content="{$Think.CONFIG.description}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<include file="Public/head" />
+   </head>
+
+	<body class="no-skin">
+		<include file="Public/header" />
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<include file="Public/sidebar" />
+			<div class="main-content">
+				<div class="main-content-inner">
+					<!-- #section:basics/content.breadcrumbs -->
+					<include file="Public/breadcrumbs" />
+
+					<!-- /section:basics/content.breadcrumbs -->
+					<div class="page-content">
+						<include file="Public/set" />
+
+						<!-- /section:settings.box -->
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+									<form class="form-horizontal" action="{:U('update')}" method="post">
+									<div class="form-group">
+										<label class="col-sm-1 control-label no-padding-right"> 用户名：</label>
+										<div class="col-sm-9">
+											<input type="text" readonly class="rcol-xs-10 col-sm-5" value="{$member.user}">
+											<input type="hidden" name="uid" value="{$member['uid']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle">无法修改</span>
+											</span>
+										</div>
+									</div>
+									<div class="space-4"></div>
+
+									<div class="form-group">
+										<label class="col-sm-1 control-label no-padding-right"> 备注： </label>
+										<div class="col-sm-9">
+											<input type="text" class="rcol-xs-10 col-sm-5" id="remark" name="remark" value="{$member.remark}" placeholder="备注">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+										</div>
+									</div>
+									<div class="space-4"></div>
+
+									<div class="form-group">
+										<label class="col-sm-1 control-label no-padding-right"> 用户组： </label>
+										<div class="col-sm-9">
+										<!-- <if condition="$member['uid'] eq 1">
+											<volist name="usergroup" id="val">
+												<if condition="$val['id'] eq $member['group_id']">
+												<input type="text"  class="col-xs-10 col-sm-5" value="{$val['title']}" readonly>
+												<input type="hidden" name="group_id" id="group_id"  class="col-xs-10 col-sm-5" value="{$member['group_id']}" >
+												</if>
+											</volist>
+											
+										<else />
+										<select id="group_id" name="group_id" class="rcol-xs-10 col-sm-5" >
+											<volist name="usergroup" id="val">
+												<option value="{$val['id']}" <if condition="$val['id'] eq $member['group_id']">selected="selected"</if>>{$val['title']}</option>
+											</volist>
+										</select>
+										</if> -->
+										<if condition="$member['group_id'] eq 2">
+											<select id="group_id" name="group_id" class="rcol-xs-10 col-sm-5" >
+													<option value="2">一级代理商</option>
+											</select>
+										<elseif condition="$member['group_id'] eq 3" />
+											<select id="group_id" name="group_id" class="rcol-xs-10 col-sm-5" >
+													<option value="3">二级分销商</option>
+											</select>
+										<else />
+											<select id="group_id" name="group_id" class="rcol-xs-10 col-sm-5" >
+													<option value="1">超级管理员</option>
+											</select>
+										</if>
+										<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle">请慎重选择用户组</span>
+											</span>
+										</div>
+									</div>
+									<!--<div class="space-4"></div>
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="cps_type"> 分享渠道： </label>
+											<div class="col-sm-9">
+												<select id="cps_type" name="cps_type" class="rcol-xs-10 col-sm-5">
+													<volist name="cpstype" id="val" key="k">
+														<option value="{$k}" <if condition="$k eq $member['cps_type']">selected="selected"</if>>{$val}</option>
+													</volist>
+												</select>
+										<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+											</div>
+										</div>
+										<div class="space-4"></div>-->
+									<div class="form-group">
+										<label class="col-sm-1 control-label no-padding-right" for="password"> 用户密码： </label>
+										<div class="col-sm-9">
+											<input type="text" name="password" id="password" placeholder="用户密码" class="col-xs-10 col-sm-5" value="">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle">留空不修改</span>
+											</span>
+										</div>
+									</div>
+									<div class="space-4"></div>
+									<if condition="$user['gid'] == 1">
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="enable_deduct"> 是否可设置抽成 </label>
+											<div class="col-sm-9">
+												<div class="checkbox">
+													<label for="enable_deduct">
+														<input type="checkbox" name="enable_deduct" id="enable_deduct"<if condition="$member['enable_deduct']"> checked</if> value="1">是
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="space-4"></div>
+									</if>
+
+
+									
+										<!--<if condition="$gid == 1 && $member['group_id'] eq 2">
+											<div class="form-group">
+												<label class="col-sm-1 control-label no-padding-right" for="enable_deduct"> 可创建一级代理商 </label>
+												<div class="col-sm-9">
+													<div class="checkbox">
+														<label for="enable_deduct">
+															<input type="checkbox" name="valve"  <if condition="$member['valve'] ==2">checked</if> value="1">是
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="space-4"></div>
+										</if>-->
+
+										<if condition="($user['gid'] == 1)">
+											<div class="form-group">
+												<label class="col-sm-1 control-label no-padding-right" for="enable_deduct"> 是否单独设置 </label>
+												<div class="col-sm-9">
+													<div class="checkbox">
+														<label for="enable_deduct">
+															<input type="checkbox" name="is_begin_kl" <?= $member['is_begin_kl'] ? 'checked' : '' ;?> value="1">是
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="space-4"></div>
+											<div class="form-group">
+												<label class="col-sm-1 control-label no-padding-right" for="enable_deduct"> 单独设置多少小时后开始(整数) </label>
+												<div class="col-sm-9">
+													<div class="checkbox">
+														<label for="enable_deduct">
+															<input type="number" name="begin_kl_time" value="{$member['begin_kl_time']}">
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="space-4"></div>
+
+											<div class="form-group">
+												<label class="col-sm-1 control-label no-padding-right" for="enable_deduct"> 最小秒数 </label>
+												<div class="col-sm-9">
+													<div class="checkbox">
+														<label for="enable_deduct">
+															<input type="number" name="kl_min_s" value="{$member['kl_min_s']}">
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="space-4"></div>
+
+											<div class="form-group">
+												<label class="col-sm-1 control-label no-padding-right" for="enable_deduct"> 最大秒数 </label>
+												<div class="col-sm-9">
+													<div class="checkbox">
+														<label for="enable_deduct">
+															<input type="number" name="kl_max_s" value="{$member['kl_max_s']}">
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="space-4"></div>
+										</if>
+
+                                        <div class="form-group">
+                                          <label class="col-sm-1 control-label no-padding-right" for="login_lock"> 用户锁定状态：</label>
+                                          <div class="col-sm-9">
+                                            <div class="checkbox">
+                                              <label for="login_lock">
+                                                <input type="radio" name="login_lock" id="login_lock"<if condition="$member['login_lock'] neq 1"> checked</if> value="0">锁定
+                                              </label>
+                                            <label for="login_lock">
+                                                <input type="radio" name="login_lock" id="login_lock"<if condition="$member['login_lock'] eq 1"> checked</if> value="1">开启
+                                              </label>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="space-4"></div>
+									<if condition="$user['gid'] == 2 && !empty($user['enable_deduct'])">
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="deduct_rate"> 抽成的比例（单位%）</label>
+											<div class="col-sm-9">
+												<input type="text" name="deduct_rate" id="deduct_rate" placeholder="比例" class="col-xs-10 col-sm-5" value="{$member['deduct_rate']}">
+												<span class="help-inline col-xs-12 col-sm-7">
+													<span class="middle">最高10%</span>
+												</span>
+											</div>
+										</div>
+										<div class="space-4"></div>
+									</if>
+									<!--<div class="form-group">-->
+										<!--<label class="col-sm-1 control-label no-padding-right" for="form-field-4"> 头像 </label>-->
+										<!--<div class="col-sm-9">-->
+											<!--<div class="col-xs-10 col-sm-5">{:UpImage("head",100,100,$member['head'])}</div>-->
+											<!--<span class="help-inline col-xs-12 col-sm-7">-->
+												<!--<span class="middle">仅支持jpg、gif、png、bmp、jpeg，且小于1MB。</span>-->
+											<!--</span>-->
+										<!--</div>-->
+									<!--</div>-->
+										<!---->
+									<!--<div class="space-4"></div>-->
+									<!--<div class="form-group">-->
+										<!--<label class="col-sm-1 control-label no-padding-right" for="form-field-4"> 性别 </label>-->
+										<!--<div class="col-sm-9">-->
+											<!--<select id="sex" name="sex" class="multiselect">-->
+												<!--<option value="0" <if condition="$member['sex'] eq 0">selected="selected"</if>>保密</option>-->
+												<!--<option value="1" <if condition="$member['sex'] eq 1">selected="selected"</if>>男</option>-->
+												<!--<option value="2" <if condition="$member['sex'] eq 2">selected="selected"</if>>女</option>-->
+											<!--</select>-->
+										<!--</div>-->
+									<!--</div>-->
+
+									<!--<div class="space-4"></div>-->
+
+									<!--<div class="form-group">-->
+										<!--<label class="col-sm-1 control-label no-padding-right" for="id-date-picker-1">生日</label>-->
+										<!--<div class="col-xs-9 col-sm-9">-->
+											<!--<div class="input-group col-xs-5">-->
+												<!--<input class="form-control" id="birthday" name="birthday" value="{$member['birthday']|date="Y-m-d",###}" type="text" data-date-format="dd-mm-yyyy" />-->
+												<!--<span class="input-group-addon">-->
+													<!--<i class="ace-icon fa fa-calendar bigger-110"></i>-->
+												<!--</span>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</div>-->
+									<!--<div class="space-4"></div>-->
+									<!--<div class="form-group">
+										<label class="col-sm-1 control-label no-padding-right" for="phone"> 电话号码 </label>
+										<div class="col-sm-9">
+											<input type="text" name="phone" id="phone" placeholder="电话号码" class="col-xs-10 col-sm-5" value="{$member['phone']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+										</div>
+									</div>
+									<div class="space-4"></div>-->
+
+									<div class="form-group">
+										<label class="col-sm-1 control-label no-padding-right" for="alipay_number"> 支付宝账号：</label>
+										<div class="col-sm-9">
+											<input type="text" name="alipay_number" id="alipay_number" placeholder="支付宝账号" class="col-xs-10 col-sm-5" value="{$member['alipay_number']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+										</div>
+									</div>
+									<div class="space-4"></div>
+									
+									<div class="form-group">
+										<label class="col-sm-1 control-label no-padding-right" for="qq"> Q&nbsp;&nbsp;Q： </label>
+										<div class="col-sm-9">
+											<input type="text" name="qq" id="qq" placeholder="QQ" class="col-xs-10 col-sm-5" value="{$member['qq']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+										</div>
+									</div>
+									<div class="space-4"></div>
+
+									<!--<div class="form-group">-->
+										<!--<label class="col-sm-1 control-label no-padding-right" for="form-field-8"> E-mail </label>-->
+										<!--<div class="col-sm-9">-->
+											<!--<input type="email" name="email" id="email" placeholder="E-mail" class="col-xs-10 col-sm-5" value="{$member['email']}">-->
+											<!--<span class="help-inline col-xs-12 col-sm-7">-->
+												<!--<span class="middle"></span>-->
+											<!--</span>-->
+										<!--</div>-->
+									<!--</div>--><!--
+										<div class="space-4"></div>-->
+									<if condition="in_array($user['uid'],C('FINANCE_IDS'))">
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="wei_number">微信账号</label>
+											<div class="col-sm-9">
+												<input type="text" name="wei_number" id="wei_number" placeholder="微信账号" class="col-xs-10 col-sm-5" value="{$member['wei_number']}">
+												<span class="help-inline col-xs-12 col-sm-7">
+													<span class="middle"></span>
+												</span>
+											</div>
+										</div>
+										<div class="space-4"></div>
+
+										<!--<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="bank_name">银行名</label>
+											<div class="col-sm-9">
+												<input type="text" name="bank_name" id="bank_name" placeholder="银行名称" class="col-xs-10 col-sm-5" value="{$member['bank_name']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+											</div>
+										</div>
+										<div class="space-4"></div>
+
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="bank_number">银行账号</label>
+											<div class="col-sm-9">
+												<input type="text" name="bank_number" id="bank_number" placeholder="银行卡号" class="col-xs-10 col-sm-5" value="{$member['bank_number']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+											</div>
+										</div>
+										<div class="space-4"></div>
+
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="bank_user">开户姓名</label>
+											<div class="col-sm-9">
+												<input type="text" name="bank_user" id="bank_user" placeholder="户主姓名" class="col-xs-10 col-sm-5" value="{$member['bank_user']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+											</div>
+										</div>
+										<div class="space-4"></div>
+
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="bank_openaddress">开户行</label>
+											<div class="col-sm-9">
+												<input type="text" name="bank_openaddress" id="bank_openaddress" placeholder="开户行" class="col-xs-10 col-sm-5" value="{$member['bank_openaddress']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+											</div>
+										</div>
+										<div class="space-4"></div>-->
+
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="scale"> 分成比例(%) </label>
+											<div class="col-sm-9">
+												<input type="text" name="scale" id="scale" placeholder="分成比例" class="col-xs-10 col-sm-5" value="{$member['scale']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+											</div>
+										</div>
+										<div class="space-4"></div>
+<!--
+										<div class="form-group">
+											<label class="col-sm-1 control-label no-padding-right" for="alipay_name"> 支付宝账户 </label>
+											<div class="col-sm-9">
+												<input type="text" name="alipay_name" id="alipay_name" placeholder="支付宝账户" class="col-xs-10 col-sm-5" value="{$member['alipay_name']}">
+											<span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle"></span>
+											</span>
+											</div>
+										</div>
+										<div class="space-4"></div>-->
+									</if>
+									<div class="col-md-offset-2 col-md-9">
+										<button class="btn btn-info" type="submit">
+											<i class="icon-ok bigger-110"></i>
+											提交
+										</button>
+
+										&nbsp; &nbsp; &nbsp;
+										<button class="btn" type="reset">
+											<i class="icon-undo bigger-110"></i>
+											重置
+										</button>
+									</div>
+								</form>
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+			<include file="Public/footer" />
+			
+		</div><!-- /.main-container -->
+
+		<include file="Public/footerjs" />
+		<!-- inline scripts related to this page -->
+		<script src="__PUBLIC__/Ln/js/date-time/bootstrap-datepicker.js"></script>
+		<script src="__PUBLIC__/Ln/js/function.js"></script>
+		<script type="text/javascript">
+		jQuery(function($){
+			$('#birthday').datepicker({
+				  format: 'yyyy-mm-dd',
+						weekStart: 1,
+						autoclose: true,
+						todayBtn: 'linked',
+						language: 'cn'
+				 });
+			});
+	</script>	
+	</body>
+</html>

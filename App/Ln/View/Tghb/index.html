@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+    <meta name="keywords" content="{$Think.CONFIG.keywords}" />
+    <meta name="description" content="{$Think.CONFIG.description}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <include file="Public/head" />
+    <link rel="stylesheet" href="__PUBLIC__/Ln/css/admin.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Ln/css/amazeui.min.css" />
+    <style type="text/css">
+    body{font-size:1.3rem}
+    .show_button{border: 1px solid #999;width:100px;float: left;text-align: center;margin:0 10px 10px 0;line-height: 30px;cursor: pointer;}
+    .ccc{background-color: #3693bf;color: #fff;border-radius: 2px;}
+    </style>
+</head>
+
+<body class="no-skin">
+<include file="Public/header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    <include file="Public/sidebar" />
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- #section:basics/content.breadcrumbs -->
+            <include file="Public/breadcrumbs" />
+            <!-- /section:basics/content.breadcrumbs -->
+            <div class="page-content">
+                <include file="Public/set" />
+                <!-- /section:settings.box -->
+                <div class="row">
+
+                    <div class="admin-content">
+                        <div class="am-g " style="margin-top:20px;">
+                            <div class="am-u-md-8">
+                                <div class="am-panel am-panel-default">
+                                    <div class="am-panel-hd am-cf"><!--域名列表(未充值跳转页面)--></div>
+                                    <div id="collapse-panel-4" class="am-panel-bd am-collapse am-in">
+                                        <div class="weixin_list margin-0" style="padding-left:20px;">
+                                            <div class="weixin am-g"  >
+                                               
+                                                <table class="am-table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="text-align:center!important;" style="width:4%" class="tb-o"> ID</th>
+                                                        <th style="text-align:center!important;" class="tb-t">接口域名</th>
+                                                        <th style="text-align:center!important;" class="tb-t">展示域名</th>
+                                                        <th style="text-align:center!important;" class="tb-th">状态</th>
+                                                        <th style="text-align:center!important;" class="tb-th">IP服务器</th>
+                                                        <th style="text-align:center!important;" class="tb-f">操作</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="app">
+                                                    <volist name="list" id="v" key="k">
+                                                    <tr>
+                                                        <td class="tb-o">{$v['id']}</td>
+                                                        <td  class="tb-t">{$v['api_domain']}</td>
+                                                        <td  class="tb-t">{$v['show_domain']}</td>
+                                                        <td class="tb-th">{$v['state_str']}</td>
+                                                        <td class="tb-th">{$v['ip']}</td>
+                                                        <td class="tb-f">
+															<a href="{:U('Tghb/index')}&id={$v['id']}">修改</a>
+															<if condition="$v['state']==1">
+																<a href="{:U('Tghb/change_state')}&id={$v['id']}&state={$v['state']}">启用</a>
+															<else/>
+																<a href="{:U('Tghb/delete')}&id={$v['id']}&state={$v['state']}">备用</a>
+															</if>
+															<a href="{:U('Tghb/del')}&id={$v['id']}">删除</a>
+														</td>
+                                                    </tr>
+                                                    </volist>
+                                                    </tbody>
+                                                </table>
+												
+												
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="am-u-md-4">
+                                <div class="am-panel am-panel-default">
+                                    <div class="am-panel-hd am-cf">添加</div>
+                                    <div id="collapse-panel-4" class="am-panel-bd am-collapse am-in">
+                                        <form class="am-form am-form-horizontal" action="{:U('Ln/Tghb/update')}" method="post" >
+                                            <input type="hidden" name="id" value="{$info['id']}">
+                                            <div class="am-form-group">
+                                                <label for="doc-ipt-3"class="am-u-sm-3 am-form-label">接口域名</label>
+												<div class="am-u-sm-9">
+                                                    <input type="text" name="api_domain" value="{$info['api_domain']}">
+                                                </div>												
+                                            </div>
+											
+											<div class="am-form-group">
+                                                <label for="doc-ipt-3"class="am-u-sm-3 am-form-label">显示域名</label>
+												<div class="am-u-sm-9">
+													<input type="text" name="show_domain" value="{$info['show_domain']}">
+                                                </div>
+                                            </div>
+											
+											<div class="am-form-group">
+                                                <label for="doc-ipt-3"class="am-u-sm-3 am-form-label">IP服务器</label>
+												<div class="am-u-sm-9">
+													<input type="text" name="ip" value="{$info['ip']}">
+                                                </div>
+                                            </div>
+											
+											
+                                            <div class="am-form-group">
+                                                <label for="doc-ipt-3" name="k" class="am-u-sm-3 am-form-label">状态</label>
+                                                <div class="am-u-sm-9">
+                                                    <select id="cid" name="state" class="form-control" size="1">
+                                                        <option <if condition="$info['state']==1">selected</if> value="1">备用</option>
+                                                        <option <if condition="$info['state']==2">selected</if> value="2">启用</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group">
+                                                <div class="am-u-sm-10 am-u-sm-offset-2">
+                                                    <button type="submit" class="am-btn am-btn-default">提交</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {$page}
+                </div><!-- /.page-content -->
+            </div>
+        </div><!-- /.main-content -->
+        <include file="Public/footer" />
+    </div>
+</div>
+<include file="Public/footerjs" />
+<!-- /.main-container -->
+<script type="text/javascript">
+    function show(page,obj){
+        $(".qccode").hide();
+        if(obj){
+            $(".ccc").removeClass("ccc");
+            $(obj).addClass("ccc");
+        }
+        $(".show_"+page).show();
+    }
+    show(1);
+    $(function(){
+        $(".del").click(function(){
+            var url = $(this).attr('val');
+            bootbox.confirm({
+                title: "系统提示",
+                message: "确定要删除?",
+                callback:function(result){
+                    if(result){
+                        window.location.href = url;
+                    }
+                },
+                buttons: {
+                    "cancel" : {"label" : "取消"},
+                    "confirm" : {
+                        "label" : "确定",
+                        "className" : "btn-danger"
+                    }
+                }
+            });
+        });
+    });
+    
+    $("#chack_lanjie").click(function(){
+       $(".tb-t").each(function(i){
+          if(i > 0){
+            var url = $(this).text();
+            var div = $(this);
+             $("#chack_lanjie").html("查询中...");
+             $.ajax({
+                type : "get",
+                data : {"url":url},
+                url  : "http://api.tcncn.com/Api?token=QBFPKDYXEUWMSRTAVOCL&return=json",
+                dataType:"jsonp",
+                success:function(data){
+                    if (data.code == 0) {
+                       div.css("color","#87CEFA");
+                    }else if(data.code == 1){
+                       div.css("color","red");
+                    }else{
+                       div.css("color","#01B468");
+                    }
+                }
+             });
+			 
+			 /*$.ajax({
+                type : "get",
+                data : {"url":url},
+                url  : "/index.php?m=Ln&c=DoMain&a=checkDoMain",
+                dataType:"json",
+                success:function(data){
+                    if (data.code == 0) {
+                       div.css("color","#87CEFA");//正常
+                    }else if(data.code == 1){
+                       div.css("color","red");//拦截
+                    }else{
+                       div.css("color","#01B468");//查询失败
+                    }
+                }
+             });*/
+             $("#chack_lanjie").html("批量查询拦截");
+        }
+    });
+  });
+
+</script>
+</body>
+</html>

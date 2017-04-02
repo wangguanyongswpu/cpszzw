@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+    <meta name="keywords" content="{$Think.CONFIG.keywords}" />
+    <meta name="description" content="{$Think.CONFIG.description}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <include file="Public/head" />
+</head>
+<body class="no-skin">
+<include file="Public/header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    <include file="Public/sidebar" />
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- #section:basics/content.breadcrumbs -->
+            <include file="Public/breadcrumbs" />
+            <!-- /section:basics/content.breadcrumbs -->
+            <div class="page-content">
+                <include file="Public/set" />
+                <!-- /section:settings.box -->
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <div class="row">
+                            <form class="form-inline" action="{:U('index')}" method="get" id="search-form">
+                                <a class="btn-line btn btn-info " href="{:U('add')}" value="">新增</a>
+                                <label class="btn-line inline">用户搜索</label>
+                                <input type="text" name="keyword" class="btn-line form-control">
+                                <!--<label class="btn-line inline">域名分组</label>
+                                <select name="packet_id">
+                                    <option value="0">选择域名分组</option>
+                                    <volist name="packet_list" id="v">
+                                        <option <if condition="I('get.packet_id')==$v['id']">selected</if> value="{$v['id']}">{$v["alias"]}</option>
+                                    </volist>
+                                    <option <if condition="I('get.packet_id')=='none'">selected</if> value="none">未分组</option>
+                                </select>-->
+                                <input type="text" name="suid" value="<?= I('get.suid','')?>" class="btn-line form-control" placeholder="推广商ID搜索">
+                                <button type="submit" class="marL-0 marT-15 btn-line btn btn-purple btn-sm">
+                                    <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                    搜索
+                                </button>
+                                <if condition="$u['gid'] lt 3">
+                                    <!--<a class="marT-15 btn-line btn btn-info" href="{:U('do_ex',array('uid'=>$u['uid']))}" value="" style="margin-left: 5%;">Excel导出</a>-->
+                                </if>
+                                <if condition="in_array($user['uid'],C('FINANCE_IDS'))">
+								<!--<a class="btn btn-info" href="{:U('do_ex',array('ref1_ids'=>C('EXCEL_REF1_ID')))}" style="margin-left: 5%;">指定一级Excel导出</a>-->
+								</if>
+                            </form>
+
+                            <if condition="in_array($user['uid'],C('FINANCE_IDS'))">
+                            <form class="form-inline" action="{:U('do_ex',array('ref1_ids'=>C('EXCEL_REF1_ID')))}" method="get" id="search-form2">
+                                <label class="inline">&nbsp;&nbsp;开始日期：</label>
+                                <div class="input-group ">
+                                    <input class="form-control" id="startime" name="startime" value="{$date.start}" type="text" data-date-format="dd-mm-yyyy"/>
+                                    <span class="input-group-addon btn-mar">
+                                        <i class="ace-icon fa fa-calendar bigger-110"></i>
+                                    </span>
+                                </div>
+                                <label class="inline clear-both margin-top1" >&nbsp;&nbsp;结束日期:</label>
+                                <div class="input-group marginT-15">
+                                    <input class="form-control" id="entime" name="endtime" value="{$date.end}" type="text"  data-date-format="dd-mm-yyyy"/>
+                                    <span class="input-group-addon btn-mar">
+                                        <i class="ace-icon fa fa-calendar bigger-110"></i>
+                                    </span>
+                                </div>
+                                <button type="submit" class="btn btn-purple btn-sm clear-both marginT-15">
+                                    <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                    指定一级Excel导出
+                                </button>
+                            </form>
+                                <form class="form-inline" action="{:U('do_ex',array('uid'=>$u['uid']))}" method="get" id="search-form3">
+                                    <button type="submit" class="btn btn-purple btn-sm clear-both marginT-15">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        导出
+                                    </button>
+                                </form>
+                            </if>
+
+                        </div>
+
+                        <div class="space-4"></div>
+                        <div class="row">
+                            <form id="form" method="post" action="{:U('del')}">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th class="center one"> ID
+                                            <!--<input class="check-all" type="checkbox" value="">-->
+                                        </th>
+                                        <th >用户名</th>
+                                        <!--<th class="two">备注</th>-->
+                                        <th class="there">用户组</th>
+                                        <th class="fou">电话</th>
+                                        <th class="fif">微信账号</th>
+                                        <th class="six">支付宝账号</th>
+                                        <!--<th class="sev">银行名称</th>
+                                        <th class="eight">银行账号</th>-->
+                                        <if condition="in_array($user['uid'],C('FINANCE_IDS'))">
+                                        <th class="nine">分成比例(%)</th>
+                                        </if>
+                                        <!--<th class="ten">上级经销商</th>-->
+                                        <!--<if condition ="$u['gid'] eq 1">
+                                            <th class="ele">所在域名组</th>
+                                        </if>-->
+                                        <!--<th class="thth">推广方式</th>-->
+                                        <th>注册时间</th>
+                                      	<th>用户锁</th>
+                                        <th class="center">操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <style>
+                                        .grouptd{position:relative;}
+                                        .group{display:inline-block;width:100%;}
+                                        .groupselect{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+                                    </style>
+                                    <volist name="list" id="val">
+                                        <if condition="$val['has_child']">
+                                            <tr class="has_child c_hide" data-id="{$val['uid']}">
+                                        <else />
+                                            <tr>
+                                        </if>
+                                        <td class="one"><i></i>{$val['uid']}
+                                            <input class="uids" type="hidden" name="uids[]" value="{$val['uid']}">
+                                        </td>
+                                            <!--<td class="center">
+                                                <if condition="$val['uid'] neq 1"><input class="uids" type="checkbox" name="uids[]" value="{$val['uid']}"><else /><span title="系统管理员，禁止删除">&#45;&#45;</span></if>
+                                            </td>-->
+                                        <if condition="$val['gid'] eq 3">
+                                            <td class="two">&nbsp;&nbsp;---&nbsp;{$val['user']}</td>
+                                            <else />
+                                            <td class="there">{$val['user']}</td>
+                                        </if>
+                                        <!--<td class="fou">{$val.remark}</td>-->
+                                        <td class="grouptd fif">
+                                            <span class="group" val="{$val['uid']}">{$val['title']}</span>
+                                        </td>
+                                        <td class="six">{$val['phone']}</td>
+                                        <td class="se">{$val['wei_number']}</td>
+                                        <td class="eight">{$val['alipay_number']}</td>
+                                        <!--<td class="nine">{$val['bank_name']}</td>
+                                        <td class="ten">{$val['bank_number']}</td>-->
+                                        <if condition="in_array($user['uid'],C('FINANCE_IDS'))">
+                                        <td class="ele">{$val['scale']}</td>
+                                        </if>
+										<!--<td>{$val['puser']}</td>
+                                        <if condition ="$u['gid'] eq 1">
+                                        <td class="twl">
+                                                <volist name="group" id="v">
+                                                    <if condition="($val['gid'] eq $v['id']) and  $v['id'] eq 2">
+                                                        {$val['packet']}
+                                                    </if>
+                                                </volist>
+                                        </td>
+                                        </if>
+                                        <td class="thth">{$cpstype[$val['cps_type']]}</td>-->
+                                        <td class="ten">{$val['date']}</td>
+                                      	<td class="ten"><if condition="$val['login_lock'] neq 1"><span style="color:red">锁定</span></if><if condition="$val['login_lock'] eq 1">正常</if></td>
+										<td class="center"><a href="{:U('edit')}&uid={$val['uid']}">修改</a>&nbsp;
+											<if condition ="$u['gid'] eq 1">
+												<span style="cursor: pointer;color: #337ab7;" onclick="up_url(this,'a_{$val['uid']}')" url_val="{:U('do_ex')}&uid={$val['uid']}">导出下级</span>
+												<a id="a_{$val['uid']}" href="" ><span></span></a>&nbsp;
+											</if>
+											<if condition="$val['uid'] neq 1">
+											<!--<a class="del" href="javascript:;" val="{:U('del')}&uids={$val['uid']}" title="删除">删除</a>-->
+										</if>
+										</td>
+                                        </tr>
+                                    </volist>
+                                    </tbody>
+                                </table>
+                            </form>
+                            {$page}
+                        </div>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    <include file="Public/footer" />
+</div><!-- /.main-container -->
+<if condition="$u['gid'] eq 2">
+    <!--modal-->
+    <div class="modal fade" id="wechat_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">选择跳转域名</h4>
+                    <input type="hidden" value="" id="select_member">
+                </div>
+                <div class="modal-body row" id="wechats">
+                    <volist name="wechats" id="val">
+                        <label class="col-xs-4" style="width:180px;">
+                            <input type="checkbox" class="ace ace-checkbox-2 children" name="wechat_ids" value="{$val.id}">
+                            <span class="lbl">{$val.url}</span>
+                        </label>
+                    </volist>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <a href="javascript:;" class="btn btn-primary" onclick="saveWechatSelect()">确定</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+</if>
+<include file="Public/footerjs" />
+<!-- inline scripts related to this page -->
+<script src="__PUBLIC__/Ln/js/date-time/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+	/**
+	* 导出下级时，url地址进行修改
+	**/
+	function up_url(obj,a_id){
+		var url_val=$(obj).attr('url_val');
+		if($("input[name='startime']").val()+''!='undefined'){
+			url_val+='&startime=' + $("input[name='startime']").val();
+		}
+		if($("input[name='endtime']").val()+''!='undefined'){
+			url_val+='&endtime=' + $("input[name='endtime']").val();
+		}
+		$('#'+a_id).attr('href',url_val).find('span').click();
+	}
+    function change_p_user(obj){
+        var uid = $(obj).closest('tr').find(".uids").val();
+        if(typeof (uid) != 'undefined'){
+            var pId = $(obj).find("option:selected").val();
+           $.get("{:U('update')}&ajax=change_puser&uid="+uid+"&pId="+pId,function(data){
+                if($.trim(data) == 1){
+                    alert('修改成功！');
+                    window.location.reload();
+                }
+            })
+        }
+    }
+    $(function(){
+        $(".packet").on('change', function(){
+            var uid = $(this).closest('tr').find(".uids").val();
+            if(typeof (uid) != 'undefined'){
+                var packet_id = $(this).find("option:selected").val();
+                $.get("{:U('update')}&ajax=packet&uid="+uid+"&packet_id="+packet_id,function(data){
+                    if($.trim(data) == 1){
+                        alert('修改成功！');
+                    }
+                })
+            }
+        });
+
+        $(".group").click(function(){
+
+            $(this).addClass('hide');
+
+            $(this).parent().find(".groupselect").removeClass('hide');
+
+        });
+
+        $(".has_child").find('i').click(function(){
+            var t = $(this).closest("tr");
+            var id = t.attr('data-id');
+            var child = $(".child_" + id);
+            var startime = $("#startime").val();
+            var endtime = $("#entime").val();
+            if(t.hasClass('c_hide')) {
+                if (child.length > 0) {
+                    child.show()
+                    t.removeClass('c_hide').addClass('c_open');
+                } else{
+                    $.get("{:U('Ln/Member/Index')}&ajax=1&uid="+id+"&gid="+{$gid},
+                            function(data){
+                                var ret = JSON.parse(data);
+                                t.after(ret.html);
+                                $("." + id + "_child").show();
+                                t.removeClass('c_hide').addClass('c_open');
+                            });
+                }
+            } else{
+                if (child.length > 0) {
+                    child.hide();
+                    t.removeClass('c_open').addClass('c_hide');
+                }
+            }
+        });
+
+        $(".groupselect").on("change",function(){
+
+            var ob = $(this);
+
+            var gid=ob.val();
+
+            var uid = ob.parent().find('.group').attr('val');
+
+            $.get("{:U('update')}&ajax=yes&uid="+uid+"&gid="+gid,function(data){
+
+                var text = ob.find("option:selected").text();
+
+                ob.parent().find(".group").removeClass('hide').html(text);
+
+                ob.addClass('hide');
+                if(gid != 2){
+                    ob.closest('tr').find(".packet").addClass('hide');
+                }else{
+                    ob.closest('tr').find(".packet").removeClass('hide');
+                }
+
+            });
+
+        });
+
+        $(".check-all").click(function(){
+
+            $(".uids").prop("checked", this.checked);
+
+        });
+
+        $(".uids").click(function(){
+
+            var option = $(".ids");
+
+            option.each(function(i){
+
+                if(!this.checked){
+
+                    $(".check-all").prop("checked", false);
+
+                    return false;
+
+                }else{
+
+                    $(".check-all").prop("checked", true);
+
+                }
+
+            });
+
+        });
+
+        $("#submit").click(function(){
+
+            bootbox.confirm({
+
+                title: "系统提示",
+
+                message: "是否要删除所选用户？",
+
+                callback:function(result){
+
+                    if(result){
+
+                        $("#form").submit();
+
+                    }
+
+                },
+
+                buttons: {
+
+                    "cancel" : {"label" : "取消"},
+
+                    "confirm" : {
+
+                        "label" : "确定",
+
+                        "className" : "btn-danger"
+
+                    }
+
+                }
+
+            });
+
+        });
+
+        $(".del").click(function(){
+
+            var url = $(this).attr('val');
+
+            bootbox.confirm({
+
+                title: "系统提示",
+
+                message: "是否要该用户?",
+
+                callback:function(result){
+
+                    if(result){
+
+                        window.location.href = url;
+
+                    }
+
+                },
+
+                buttons: {
+
+                    "cancel" : {"label" : "取消"},
+
+                    "confirm" : {
+
+                        "label" : "确定",
+
+                        "className" : "btn-danger"
+
+                    }
+
+                }
+
+            });
+
+        });
+
+        /*查询*/
+        $("#search-form").on('submit',function(e){
+            e.preventDefault();
+            var getURl = $("#search-form").attr("action")
+					+'&packet_id='+$("select[name='packet_id']").val()
+                    +'&keyword='+ $("input[name='keyword']").val()
+                    +'&order='+ $("#order").find("option:selected").val();
+            var suid = $("input[name='suid']").val();
+            if(suid){
+                getURl += '&suid='+suid;
+            }
+            window.location.href=getURl;
+        });
+
+        $('#startime').datepicker({
+            format: 'yyyy-mm-dd',
+            weekStart: 1,
+            autoclose: true,
+            todayBtn: 'linked',
+            language: 'cn'
+        });
+
+        $('#entime').datepicker({
+            format: 'yyyy-mm-dd',
+            weekStart: 1,
+            autoclose: true,
+            todayBtn: 'linked',
+            language: 'cn'
+        });
+
+        $("#search-form2").on('submit', function (e) {
+
+            e.preventDefault();
+
+            var getURl = $("#search-form2").attr("action") + '&startime=' + $("input[name='startime']").val() + '&endtime=' + $("input[name='endtime']").val() ;
+
+            $("#search-form2").attr("action", getURl);
+
+            window.location.href = getURl;
+
+        });
+
+        $("#search-form3").on('submit', function (e) {
+
+            e.preventDefault();
+
+            var getURl = $("#search-form3").attr("action") + '&startime=' + $("input[name='startime']").val() + '&endtime=' + $("input[name='endtime']").val() ;
+
+            $("#search-form3").attr("action", getURl);
+
+            window.location.href = getURl;
+
+        });
+
+    });
+    <if condition="$u['gid'] eq 2">
+        function showWechatSelect(id)
+        {
+            $('#select_member').val(id);
+            var w_ids = $("#member_"+id).val().split(',');
+            $('input[name="wechat_ids"]').each(function(index, value){
+                if($.inArray($(this).val(),w_ids) != -1){
+                    $(this).prop('checked', true);
+                } else {
+                    $(this).prop('checked', false);
+                }
+            });
+            $("#wechat_modal").modal();
+        }
+
+        function saveWechatSelect()
+        {
+            var str = '';
+            $('input[name="wechat_ids"]').each(function(){
+                if($(this).prop('checked')) {
+                    str += ',' + $(this).val();
+                }
+            });
+
+            if(str != '') {
+                str = str.substr(1);
+                var id = $('#select_member').val();
+
+                $.ajax({
+                    type: 'GET',
+                    url: "{:U('Member/saveWechatSelect')}",
+                    data: {'id': id, 'ids': str, 'ajax': 1},
+                    dataType: 'text',
+                    success: function (data) {
+                        $("#member_"+id).val(str);
+                    }
+                });
+            }
+
+            $("#wechat_modal").modal('hide');
+        }
+    </if>
+</script>
+</body>
+</html>

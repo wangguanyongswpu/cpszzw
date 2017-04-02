@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>{$current['title']}-{$Think.CONFIG.title}</title>
+		<meta name="keywords" content="{$Think.CONFIG.keywords}" />
+		<meta name="description" content="{$Think.CONFIG.description}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<include file="Public/head" /></head>
+	<style type="text/css">
+		tbody.qrcode .popover-options{position: relative;}
+		tbody.qrcode .popover{left:125px;top:-45px;display: none;-webkit-box-shadow: 0 0 4px 2px rgba(204,204,204,0.2);
+			box-shadow: 0 0 4px 2px rgba(204,204,204,0.2);}
+		tbody.qrcode .popover > .arrow{border-top-color: rgba(204, 204, 204, 0.25);}
+		tbody.qrcode .popover .popover-content{text-align: center;}
+		.show_button{border: 1px solid #999;width:100px;float: left;text-align: center;margin:0 10px 10px 0;line-height: 30px;cursor: pointer;}
+		.ccc{background-color: #ccc;}
+		.qccode{display: none;}
+		.show_1{display: table-cell;}
+		.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+			vertical-align:middle!important;
+		}
+		@media (max-width: 760px) {
+			tbody.qrcode .popover{
+				top: -45px;
+				left: 0;
+			}
+			.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+				 vertical-align:middle!important;
+			 }
+			.table{
+				word-break: break-all;
+			}
+		}
+	</style>
+	<body class="no-skin">
+		<include file="Public/header" />
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">try {
+					ace.settings.check('main-container', 'fixed')
+				} catch(e) {}</script>
+			<include file="Public/sidebar" />
+			<div class="main-content">
+				<div class="main-content-inner">
+					<!-- #section:basics/content.breadcrumbs -->
+					<include file="Public/breadcrumbs" />
+					<!-- /section:basics/content.breadcrumbs -->
+					<div class="page-content">
+						<include file="Public/set" />
+						<!-- /section:settings.box -->
+						<div class="row">
+							<div class="col-xs-12">
+								<div>
+									<?php $count=ceil(count($list[0]['qrcode'])/10);?>
+									<?php for($i=1;$i<=$count;$i++){ ?>
+											<div class="show_button <if condition='$i eq 1'>ccc</if>" onclick="show({$i},this)">第{$i}页</div>
+									<?php }?>
+								</div>
+								<!-- PAGE CONTENT BEGINS -->
+								<form id="export-form" method="post" action="{:U('del')}">
+									<table class="table table-striped table-bordered table-hover">
+										<thead>
+											<tr>
+												<th class="center">入口域名</th>
+												<th class="center">分享域名</th>
+												<th class="center">微信群域名</th>
+											</tr>
+										</thead>
+										<tbody class="qrcode">
+										<for start="0" end="$maxcount-1"  name="i">
+												<tr>
+													<td>{$domain[$i]['url']}</td>
+													<td>{$frend_domain[$i]['url']}</td>
+													<td>{$group_domain[$i]['url']}</td>
+												</tr>
+										</for>
+										</tbody>
+									</table>
+								</form>
+								<!-- PAGE CONTENT ENDS -->
+							</div>
+							<!-- /.col -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.page-content -->
+				</div>
+			</div>
+			<!-- /.main-content -->
+			<include file="Public/footer" /></div>
+		<!-- /.main-container -->
+		<include file="Public/footerjs" />
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+
+
+			function show(page,obj){
+				$(".qccode").hide();
+				if(obj){
+					$(".ccc").removeClass("ccc");
+					$(obj).addClass("ccc");
+				}
+				$(".show_"+page).show();
+			}
+			function QrCode(id, uid, obj,isurl) {
+				if(obj.parent().find('.popover').hasClass('show')){
+					$(".popover").removeClass('show').addClass('hide');
+				}else if(isurl == 0){
+					$url = obj.attr('data-content');
+					if($url == '') {
+						$.ajax({
+							url: "{:U('generateQrCode')}&we_id=" + id + "&uid=" + uid,
+							type: "get",
+							async: false,
+							dataType: 'json',
+							success: function (data) {
+								var back_data = data;
+								if (back_data.status == 1) {
+									obj.attr('data-content', back_data.url);
+									obj.parent().find('.popover-content').html("<img src='" + back_data.url + "' width='100' height='100'>");
+								} else {
+									obj.parent().find('.popover-content').html('生成异常');
+								}
+
+								$(".popover").removeClass('show').addClass('hide');
+								obj.parent().find('.popover').removeClass('hide').addClass('show');
+							}
+						})
+					} else {
+						$(".popover").removeClass('show').addClass('hide');
+						obj.parent().find('.popover').removeClass('hide').addClass('show');
+					}
+				}else{
+					$(".popover").removeClass('show').addClass('hide');
+					obj.parent().find('.popover').removeClass('hide').addClass('show');
+				}
+			}
+			$("document").click(function(){
+				$("tbody.qrcode .popover").css({
+					display:"none!important"
+				});
+//				alert("ddsdsd");
+			})
+		</script>
+	</body>
+
+</html>

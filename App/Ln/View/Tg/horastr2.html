@@ -1,0 +1,429 @@
+ <!DOCTYPE html>
+
+<html lang="zh-CN">
+<style>
+    .clear_fix:after{
+        content: "";
+        display: block;
+        overflow: hidden;
+        height: 0;
+        clear: both;
+    }
+    .type:after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        height: 20px;
+        width: 100%;
+        background: #fff;
+    }
+
+/*table tr:hover{ background-color: #00a2d4}*/
+</style>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta charset="utf-8" />
+
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+
+
+
+    <meta name="keywords" content="{$Think.CONFIG.keywords}" />
+
+    <meta name="description" content="{$Think.CONFIG.description}" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <include file="Public/head" />
+    <!--<link rel="stylesheet" href="__PUBLIC__/Ln/css/count_show.css" />-->
+
+</head>
+
+
+
+<body class="no-skin">
+
+<include file="Public/header" />
+
+<div class="main-container" id="main-container">
+
+<script type="text/javascript">
+
+    try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+
+</script>
+
+
+
+<include file="Public/sidebar" />
+
+<div class="main-content">
+
+    <div class="main-content-inner">
+
+        <!-- #section:basics/content.breadcrumbs -->
+
+        <include file="Public/breadcrumbs" />
+
+
+
+        <!-- /section:basics/content.breadcrumbs -->
+
+        <div class="page-content">
+
+            <include file="Public/set" />
+            <!-- /section:settings.box -->
+            <table class="table table table-striped table-bordered table-hover">
+                <thead>
+                <tr>
+                    <td style="width: 5%">时间</td>
+                    <td style="width: 7%">名称</td>
+                    <volist name="head" id="v1" >
+                    <td align="center" style="width: 120px;">{$v1}</td>
+                        <?php $sum[$v1]=0;?>
+                    </volist>
+                </tr>
+                </thead>
+                <foreach name="money" item="v1" key="k1" >
+
+                  <tr>
+                        <td  rowspan="<?php if($_GET['debug']){?>17<?php }else{?>12<?php }?>">{$k1}点</td>
+                      <?php if($_GET['debug']){?>
+
+                        <td>本小时充值<span style="color:red">(未)</span></td>
+                            <foreach name="head" item="vo" key="k" >
+                                <td align="center" style="width: 120px;">{$v1[$k]['notsum']}</td>
+                                <?php $notsumx[$vo] += $v1[$k]['notsum'];?>
+                            </foreach>
+                      <?php }?>
+                  </tr>
+
+                   <tr style="background-color: #ffd3da">
+                        <td>本小时充值</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">{$v1[$k]['c']}</td>
+                            <?php $sum[$vo] += $v1[$k]['c'];?>
+                        </foreach>
+                    </tr>
+
+                    <?php if($_GET['debug']){?>
+                    <tr class="warning">
+                        <td>日累计充值<span style="color:red">(未)</span></td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">{$notsumx[$vo]}</td>
+                        </foreach>
+                    </tr>
+                    <?php }?>
+
+                    <tr style="background-color: #f9c0f2">
+                        <td>日累计充值</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">{$sum[$vo]}</td>
+                        </foreach>
+                    </tr>
+
+                    <tr class="info">
+                        <td>对比前一天</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;<?php  if(strstr($v1[$k]['s'],'-'))echo 'color:#df95b8';?>">{$v1[$k]['s']}</td>
+                        </foreach>
+                    </tr>
+
+                    <tr class="success">
+                        <td>小时ip量</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;" class="ipaction">
+                                <input style="text-align: center;color: red;width: 70px;" value="{$v1[$k]['ipnum']}" nameid="{$vo}{$k1}" chongzhi="{$v1[$k]['c']}" style="width: 55px;height: 19px;" name="{$vo}:{$k1}"/>
+                                </td>
+                        </foreach>
+                    </tr>
+
+                    <?php if($_GET['debug']){?>
+                    <tr style="background-color: #f8eefb">
+                        <td>android本小时充值<span style="color:red">(未)</span></td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">{$v1[$k]['notsumand']|default=0}</td>
+                            <?php $notsumxand[$vo] += $v1[$k]['notsumand'];?>
+                        </foreach>
+                    </tr>
+                    <?php }?>
+
+                    <tr style="background-color: #e4d0f9">
+                        <td>android本小时充值<span style="color:red"></span></td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">{$v1[$k]['sumand']|default=0}</td>
+                            <?php $sumxand[$vo] += $v1[$k]['sumand'];?>
+                        </foreach>
+                    </tr>
+
+                    <tr style="background-color: #d6fffb">
+                        <td>android小时ip量</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;" class="ipactionand">
+                                <input style="text-align: center;color: red;width: 70px;" value="{$v1[$k]['andip']}" nameid="{$vo}{$k1}" id="{$vo}{$k1}" andip="{$v1[$k]['c']}" style="width: 55px;height: 19px;" name="{$vo}:{$k1}"/>
+                                </td>
+                        </foreach>
+                    </tr>
+
+                    <tr style="background-color: #d6e1ff">
+                        <td>android小时下载量</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;" class="anddip">
+                                <input style="text-align: center;color: red;width: 70px;" value="{$v1[$k]['anddip']}" nameid="{$vo}{$k1}" andipid="{$vo}{$k1}" anddip="{$v1[$k]['c']}" style="width: 55px;height: 19px;" name="{$vo}:{$k1}"/>
+                                </td>
+                        </foreach>
+                    </tr>
+
+                    <tr style="background-color: #daffd6">
+                        <td>android下载小时转化率</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">
+                                <?php
+                                    if(!empty($v1[$k]['anddip']) && !empty($v1[$k]['andip'])){
+                                        $not = $v1[$k]['anddip']/$v1[$k]['andip'];
+                                        $not = round($not,4);
+                                        $not = $not*100;
+                                    }else{
+                                        $not = 0;
+                                    }
+                                ?>
+                                <span class="zhuanhuanlv" id="">{$not}%</span>
+                                </td>
+                        </foreach>
+                    </tr>
+
+                    <?php if($_GET['debug']){?>
+                    <tr style="background-color: #ffffd6">
+                        <td>android充值小时转化率<span style="color:red">(未)</span></td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">
+                                <?php
+                                    if(!empty($v1[$k]['notsumand']) && !empty($v1[$k]['andip'])){
+                                        $not = $v1[$k]['notsumand']/$v1[$k]['andip'];
+                                        $not = round($not,4);
+                                        $not = $not*100;
+                                    }else{
+                                        $not = 0;
+                                    }
+                                ?>
+                                <span class="zhuanhuanlv" id="">{$not}%</span>
+                            </td>
+                        </foreach>
+                    </tr>
+                    <?php }?>
+
+                    <tr style="background-color: #efd6ff">
+                        <td>android充值小时转化率</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">
+                                <?php
+                                    if(!empty($v1[$k]['sumand']) && !empty($v1[$k]['andip'])){
+                                        $not = $v1[$k]['sumand']/$v1[$k]['andip'];
+                                        $not = round($not,4);
+                                        $not = $not*100;
+                                    }else{
+                                        $not = 0;
+                                    }
+                                ?>
+                                <span class="zhuanhuanlv" id="">{$not}%</span>
+                                </td>
+                        </foreach>
+                    </tr>
+
+                    <?php if($_GET['debug']){?>
+                    <tr class="warning">
+                            <td>android日累计充值<span style="color:red">(未)</span></td>
+                            <foreach name="head" item="vo" key="k" >
+                                <td align="center" style="width: 120px;">{$notsumxand[$vo]}</td>
+                            </foreach>
+                    </tr>
+                    <?php }?>
+
+                    <tr style="background-color: #d9ffd6">
+                        <td>android日累计充值</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">{$sumxand[$vo]}</td>
+                        </foreach>
+                    </tr>
+
+                    <?php if($_GET['debug']){?>
+                    <tr class="danger">
+                        <td>小时转化率<span style="color:red">(未)</span></td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">
+                                <?php
+                                    if(!empty($v1[$k]['ipnum']) && $v1[$k]['ipnum'] !== 0){
+                                        $not = $v1[$k]['notsum']/$v1[$k]['ipnum'];
+                                        $not = round($not,4);
+                                        $not = $not*100;
+                                        $not = $not.'%';
+                                    }else{
+                                        $not = 0;
+                                    }
+                                ?>
+                                <span class="zhuanhuanlv">{$not}</span>
+                            </td>
+                        </foreach>
+                    </tr>
+                    <?php }?>
+
+                    <tr style="background-color:#ffafaf" >
+                        <td>小时转化率</td>
+                        <foreach name="head" item="vo" key="k" >
+                            <td align="center" style="width: 120px;">
+                                <span class="zhuanhuanlv" id="{$vo}{$k1}">{$v1[$k]['zhl']}</span>
+                                </td>
+                        </foreach>
+                    </tr>
+
+                </foreach>
+
+                <tr>
+                    <td  rowspan="<?php if($_GET['debug']){?>8<?php }else{?>6<?php }?>">总结</td>
+                    <td>当日IP总量</td>
+                    <foreach name="head" item="vo" key="k" >
+                        <td align="center" style="width: 120px;">
+                            <span class="zhuanhuanlv">{$ipsum[$vo]['ipsum']}</span>
+                        </td>
+                    </foreach>
+                </tr>
+
+                <tr style="background-color: #e2d6ff">
+                    <td>android当日IP总量</td>
+                    <foreach name="head" item="vo" key="k" >
+                        <td align="center" style="width: 120px;">
+                            <span class="zhuanhuanlv">{$ipsum[$vo]['andipsum']}</span>
+                        </td>
+                    </foreach>
+                </tr>
+
+               <tr style="background-color: #d6efff">
+                    <td>android当日下载IP总量</td>
+                    <foreach name="head" item="vo" key="k" >
+                        <td align="center" style="width: 120px;">
+                            <span class="zhuanhuanlv">{$ipsum[$vo]['anddipsum']}</span>
+                        </td>
+                    </foreach>
+                </tr>
+
+                <tr style="background-color: #d6ffe5">
+                    <td>android日累计下载转化率</td>
+                    <foreach name="head" item="vo" key="k" >
+                        <td align="center" style="width: 120px;">
+                            <!-- <span class="zhuanhuanlv">{$ipsum[$vo]['anddipsum']}</span> -->
+                            <?php
+                                if(!empty($ipsum[$vo]['anddipsum']) && !empty($ipsum[$vo]['andipsum'])){
+                                    $not = $ipsum[$vo]['anddipsum']/$ipsum[$vo]['andipsum'];
+                                    $not = round($not,4);
+                                    $not = $not*100;
+                                    $not = $not.'%';
+                                }else{
+                                    $not = 0;
+                                }
+                            ?>
+                            <span class="zhuanhuanlv">{$not}</span>
+                        </td>
+                    </foreach>
+                </tr>
+
+                <?php if($_GET['debug']){?>
+                <tr style="background-color: #f2ffd6">
+                    <td>android日累计转化率<span style="color:red">(未)</span></td>
+                    <foreach name="head" item="vo" key="k" >
+                        <td align="center" style="width: 120px;">
+                            <span class="zhuanhuanlv">{$rateandnot[$vo]['rate']}</span>
+                        </td>
+                    </foreach>
+                </tr>
+                <?php }?>
+
+                <tr style="background-color: #fffcd6">
+                    <td>android日累计转化率</td>
+                    <foreach name="head" item="vo" key="k" >
+                        <td align="center" style="width: 120px;">
+                            <span class="zhuanhuanlv">{$rateand[$vo]['rate']}</span>
+                        </td>
+                    </foreach>
+                </tr>
+
+                <?php if($_GET['debug']){?>
+                <tr style="background-color: #ffd6f7">
+                    <td>日累计转化率<span style="color:#000000"><span style="color: red">(未)</span></span></td>
+                    <foreach name="head" item="vo" key="k" >
+                        <td align="center" style="width: 120px;">
+                            <span class="zhuanhuanlv">{$notrate[$vo]['rate']}</span>
+                        </td>
+                    </foreach>
+                </tr>
+                <?php }?>
+
+                <tr style="background-color: #ffd6d6">
+                    <td>日累计转化率</td>
+                    <foreach name="head" item="vo" key="k" >
+                        <td align="center" style="width: 120px;">
+                            <span class="zhuanhuanlv">{$rate[$vo]['rate']}</span>
+                        </td>
+                    </foreach>
+                </tr>
+
+            </table>
+
+        </div>
+        </div><!-- /.col -->
+    <!-- /.main-content -->
+
+    <include file="Public/footer" />
+
+
+
+</div><!-- /.main-container -->
+
+
+<include file="Public/footerjs" />
+
+    <script>
+        $(".ipaction input").blur(function(){
+            var date = $(this).attr('name');
+            var chongzhi = $(this).attr('chongzhi');
+            var value = $(this).val();
+            var nameid = $(this).attr('nameid');
+            $.get("/index.php?m=Ln&c=Tg&a=saveip&date="+date+"&value="+value+"&chongzhi="+chongzhi,function(data,status){
+                if(data != '-1')
+                {
+                    $('#'+nameid).text(data)
+                }
+            });
+        })
+
+        $(".ipactionand input").blur(function(){
+            var date = $(this).attr('name');
+            var value = $(this).val();
+            var nameid = $(this).attr('nameid');
+            $.get("/index.php?m=Ln&c=Tg&a=saveipand&date="+date+"&value="+value,function(data,status){
+                if(data != '-1')
+                {
+                    //$('#'+nameid+1).text(data)
+                }
+            });
+        })
+
+        $(".anddip input").blur(function(){
+            var date = $(this).attr('name');
+            var value = $(this).val();
+            var nameid = $(this).attr('nameid');
+            $.get("/index.php?m=Ln&c=Tg&a=saveipandd&date="+date+"&value="+value,function(data,status){
+                if(data != '-1')
+                {
+                    //$('#'+nameid+2).text(data)
+                }
+            });
+        })
+    </script>
+
+</body>
+
+</html>

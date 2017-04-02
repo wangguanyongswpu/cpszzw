@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<style>
+    .clear_fix:after{
+        content: "";
+        display: block;
+        overflow: hidden;
+        height: 0;
+        clear: both;
+    }
+    .type:after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        height: 20px;
+        width: 100%;
+        background: #fff;
+    }
+    .ba_red{background: red;}
+    .ba_red{background: red;}
+    table tbody tr td{text-align: center!important;}
+
+</style>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta charset="utf-8" />
+
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+
+
+
+    <meta name="keywords" content="{$Think.CONFIG.keywords}" />
+
+    <meta name="description" content="{$Think.CONFIG.description}" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <include file="Public/head" />
+    <!--<link rel="stylesheet" href="__PUBLIC__/Ln/css/count_show.css" />-->
+    <style>
+        ._red{color: red}
+        ._blue{color:blue}
+    </style>
+</head>
+
+
+
+<body class="no-skin">
+
+<include file="Public/header" />
+
+<div class="main-container" id="main-container">
+
+    <script type="text/javascript">
+
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+
+    </script>
+
+
+
+    <include file="Public/sidebar" />
+
+    <div class="main-content">
+
+        <div class="main-content-inner">
+
+            <!-- #section:basics/content.breadcrumbs -->
+
+            <include file="Public/breadcrumbs" />
+
+
+
+            <!-- /section:basics/content.breadcrumbs -->
+
+            <div class="page-content">
+
+                <include file="Public/set" />
+                <!-- /section:settings.box -->
+                <table class="table table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>名称</th>
+                        <volist name="head" id="hv">
+                            <th>{$hv}</th>
+                        </volist>
+                    </tr>
+                    </thead>
+
+                    <?php
+                  $debug = I('get.debug',0);
+
+                 foreach($list as $k => $v){ ?>
+                    <tr style="background-color: #ffd3da">
+                        <td rowspan="7" style="background: white;"><?= $k;?></td>
+                        <td>小时充值</td>
+                        <?php foreach($head as $hv){ ?>
+                        <td id="xscz{$hv}-{$k}">
+                            <?php echo "<span class='kl'>".$v[$hv]['money']."</span>";
+                            if($debug){
+                            echo "<span class='_red'>(<label>".(int)$v[$hv]['klqmoney']."</label>)</span>扣量<span style='color: blue'>".($v[$hv]['klqmoney']-$v[$hv]['money'])."</span>";
+                            }?></td>
+                        <?php }?>
+                    </tr>
+                    <tr style="background-color: #f9c0f2">
+                        <td>前一天充值</td>
+                        <?php foreach($head as $hv){ ?>
+                        <td>
+                            <?= $v[$hv]['qytmoney'] ;?>
+                            <?php
+                                if($debug){
+                                    echo "<span class='_red'>(".(int)$v[$hv]['klqytmoney'].")</span>扣量<span class='_blue'>".($v[$hv]['klqytmoney']-$v[$hv]['qytmoney'])."</span>";
+                            }
+                            ?>
+                        </td>
+                        <?php }?>
+                    </tr>
+                    <tr style="background-color: #f8eefb">
+                        <td>对比前一天充值</td>
+                        <?php foreach($head as $hv){ ?>
+                        <td>
+                            <?= $v[$hv]['qytmoney'] ? round( ($v[$hv]['money']-$v[$hv]['qytmoney'])/$v[$hv]['qytmoney'],4)*100 . '%' : 0;?>
+                            <?php
+                                if($debug){
+                                    if($v[$hv]['klqytmoney']){
+                                        echo "<span class='_red'>(".round( ($v[$hv]['klqmoney']-$v[$hv]['klqytmoney'])/$v[$hv]['klqytmoney'] , 4)*100 . '%'.")</span>";
+                            }else{echo "<span class='_red'>(0)</span>";}
+                            }
+                            ?>
+                        </td>
+                        <?php }?>
+                    </tr>
+                    <tr style="background-color: #e4d0f9">
+                        <td>日累计</td>
+                        <?php foreach($head as $hv){ ?>
+                        <td>
+                            <?= $v[$hv]['todaymoney'] ? $v[$hv]['todaymoney'] : 0 ; ?>
+                            <?php if($debug){ echo "<span class='_red'>(". (int)$v[$hv]['klqtodaymoney'] .")</span>" ;  } ?>
+                        </td>
+                        <?php }?>
+                    </tr>
+                    <tr style="background-color: #d6fffb">
+                        <td>小时IP</td>
+                        <?php foreach($head as $hv){
+
+                            $ipcount = $iplist[$hv.':'.$k] ? $iplist[$hv.':'.$k] : 0 ;
+                        ?>
+                        <td><input id="{$hv}-{$k}" onchange="saveIp(this)" ymd="<?= $hv?>" h="<?= $k?>" type="text" value="<?= $ipcount ;?>" style="width: 100px;text-align: center;" /></td>
+                        <?php }?>
+                    </tr>
+
+                    <tr style="background-color: #d6e1ff">
+                        <td >ip转换率</td>
+                        <?php foreach($head as $hv){
+                             $ipcount = $iplist[$hv.':'.$k] ? $iplist[$hv.':'.$k] : 0 ;
+                        ?>
+                        <td id="ipzhl{$hv}-{$k}" >
+                            <?php
+                                 if($ipcount){
+                                    echo "<span class='kl'>". round( ($v[$hv]['money']/$ipcount) , 4)*100 . "%</span>" ;
+                            }else{
+                            echo "<span class='kl'>0%</span>" ;
+                            }
+                            ?>
+                            <?php
+                                 if($debug ){
+                                    if( $ipcount){
+                                        echo "<span class='klq _red'>(<label>".round( ($v[$hv]['klqmoney']/$ipcount) , 4)*100 . '%' ."</label>)</span>" ;
+                            }else{
+                                    echo "<span class='klq _red'>(<label>0%</label>)</span>" ;
+                                 }
+                            }
+                            ?>
+                        </td>
+                        <?php }?>
+                    </tr>
+                    <tr style="background-color: #daffd6">
+                        <td >ip对比前一天</td>
+                        <?php foreach($head as $hv){
+                            $todayipcount = $iplist[$hv.':'.$k] ? $iplist[$hv.':'.$k] : 0 ;
+                        ?>
+
+                        <td id="dbqytip{$hv}-{$k}"><?= $v[$hv]['qytip'] ? round( ($todayipcount - $v[$hv]['qytip'])/$v[$hv]['qytip'] , 4)*100 . '%' : '' ; ?></td>
+                        <?php }?>
+                    </tr>
+
+                    <?php }?>
+                </table>
+
+            </div>
+        </div><!-- /.col -->
+        <!-- /.main-content -->
+
+        <include file="Public/footer" />
+
+
+
+    </div><!-- /.main-container -->
+
+
+    <include file="Public/footerjs" />
+
+    <script>
+        function  saveIp(obj) {
+
+            var ymd = $(obj).attr("ymd");
+            var h = $(obj).attr("h");
+            var ipcount = $(obj).val();
+
+            $.get("{:U('Ln/Promotion/save_ip')}",{'ymd':ymd,'h':h,'ipcount':ipcount},function (data) {
+                if(data == '1'){
+                    var idd = $(obj).attr("id");
+                    var xsczObj = $("#xscz"+idd);
+                    var xscz = parseInt(xsczObj.find(".kl").text());
+                    console.log(xscz);
+                    var zhl = (xscz/ipcount).toFixed(4)*100+'%';
+
+                    var qytip = parseInt( $(obj).closest("td").prev().find("input").val() );
+                    if(qytip){
+                        var dbqyt = ( (ipcount-qytip)/qytip ).toFixed(4)*100+'%';
+                        $("#dbqytip"+idd).text(dbqyt);
+                    }
+                    $("#ipzhl"+idd).find(".kl").text(zhl) ;
+                    if("{$debug}" == "1"){
+                        var klqxscz = parseInt(xsczObj.find("label").text());
+                        var klqzhl = (klqxscz/ipcount).toFixed(4)*100+'%';
+                        $("#ipzhl"+idd).find("label").text(klqzhl);
+                    }
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>

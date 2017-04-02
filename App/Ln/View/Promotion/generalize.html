@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+    <meta name="keywords" content="{$Think.CONFIG.keywords}"/>
+    <meta name="description" content="{$Think.CONFIG.description}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <script src="__PUBLIC__/Ln/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Ln/js/clipboard.min.js"></script>
+    <include file="Public/head"/>
+    <style type="text/css">
+        .media-table tbody tr td {
+            border: none;
+        }
+
+        button, input, optgroup, select, textarea {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: none !important;
+        }
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .btn-blue {
+            border-radius: 2px;
+            cursor: pointer;
+            border: none;
+            background-color: #438eb9 !important;
+        }
+
+        .margin-top {
+            /*margin-top: 30px;*/
+        }
+
+        .photo {
+            width: 80%;
+            /*height: 150px;*/
+            display: block;
+            margin: 5px auto;
+            border: none!important;
+        }
+        .photo1 {
+            text-align: center;
+            /*width: 80%;*/
+            /*height: 150px;*/
+            display: block;
+            margin: 5px auto;
+            border: none!important;
+        }
+
+        .photo img {
+            border: none !important;
+        }
+        .photo1 img{
+            /*width: 100%;*/
+            border: none !important;
+        }
+        .panel-group img{height:90%!important;width:90%}
+    </style>
+</head>
+<body class="no-skin">
+<include file="Public/header"/>
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    <include file="Public/sidebar" />
+    <!-- /section:basics/sidebar -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- /section:basics/content.breadcrumbs -->
+            <div class="main-content">
+                <div class="main-content-inner">                    <!-- #section:basics/content.breadcrumbs -->
+                    <include file="Public/breadcrumbs"/>                    <!-- /section:basics/content.breadcrumbs -->
+                    <div class="page-content">
+<div class="panel-group" id="accordion">
+
+                <div class="panel panel-default">
+					<div class="panel-heading"><h4><span class="fa fa-link"> 直链推广</span></h4></div>
+					<div class="row detail-package navbar-btn">
+
+                        <div class="get-url-div get-url-div1" div-num="1" style="padding: 6px 10px;background: #488eb7;color:#fff;width: 118px;border-radius: 5px;font-size: 16px;margin-left: 35px;">点击获取链接</div>
+
+                        <div class="col-xs-12 url-div1" style="display:none;">
+							<div class="ml-lg col-sm-11">
+								<table class="table media-table">
+									<tbody>
+									<tr>
+										<td class="wxg-link" colspan="2">
+											<div class="help-block mt-lg">直链推广（可以分享到微信群推广）</div>
+											<input id="wxg-link1" class="copy-text longlink"  value="{$v.url}">
+											<div class="btn-group margin-top">
+											<br>
+											<button class="btn btn-blue J-copy-tbn"  data-clipboard-text="{$v.url}"
+													data-clipboard-target="#wxg-link1">
+												复制地址
+											</button>
+											</div>
+										</td>
+									</tr>
+
+                                    <tr>
+                                        <td class="wxg-link" colspan="2">
+                                            <div class="help-block mt-lg">短链推广（可以分享到微信群推广）</div>
+                                            <input id="wxg-link2" class="copy-text shortlink"  value="{$v.shorturl}">
+                                            <div class="btn-group margin-top">
+                                            <br>
+                                            <button class="btn btn-blue J-copy-tbn"  data-clipboard-text="{$v.shorturl}"
+                                                    data-clipboard-target="#wxg-link2">
+                                                复制地址
+                                            </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div>
+				
+				<!--<div class="panel panel-default">
+					<div class="panel-heading"><h4><span class="fa fa-link"> js推广（适用于自媒体广告位）<span style="color: red;">可在uid={$uid}后添加pic图片地址参数来使用自己的外链图片，例如: http://www.hhjzfj.com/Index/Js/index?uid={$uid}&pic=http://js.cywl5.com/640200/31.gif</span></span></h4></div>
+					<div class="row detail-package navbar-btn">
+
+                        <div  class="get-url-div get-url-div2" div-num="2" style="padding: 6px 10px;background: #488eb7;color:#fff;width: 118px;border-radius: 5px;font-size: 16px;margin-left: 35px;">点击获取链接</div>
+
+                        <div class="col-xs-12 url-div2" style="display:none;">
+							<div class="ml-lg col-sm-11">
+								<table class="table media-table">
+									<tbody>
+									<tr>
+										<td class="" style="width: 40%;">
+											<input id="js-link" class="copy-text"  value="<script type='text/javascript' src='http://{$moive_domain.0.url}/jsad/{$uid}.gif'></script>">
+											<input id="js-link" class="copy-text _height _input_ float_left" style="border-radius: 5px!important;"  value='<script type="text/javascript" src="http://{$js_review_domain}/Index/Js/index?uid={$uid}"></script>'>
+											<div class="btn-group margin-top float_left">
+												<button id="js-link1" class="btn btn-blue J-copy-tbn bg_green"  data-clipboard-text='<script type="text/javascript" src="http://{$js_review_domain}/Index/Js/index?uid={$uid}"></script>'
+														data-clipboard-target="#js-link">
+													复制地址
+												</button>
+											</div>
+										</td>
+										<td class="">
+											<div class="help-block mt-lg">效果浏览</div>
+											&lt;!&ndash;<input id="js-link" class="copy-text"  value="<script type='text/javascript' src='http://{$moive_domain.0.url}/jsad/{$uid}.gif'></script>">&ndash;&gt;
+                                            <script type="text/javascript" src="http://{$js_review_domain}/Index/Js/index?uid={$uid}"></script>
+										</td>
+
+									</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>-->
+
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4><span class="fa fa-link"> 推广图片</span></h4></div>
+					<div class="row detail-package navbar-btn">
+
+                        <div class="get-url-div get-url-div3" div-num="3" style="padding: 6px 10px;background: #488eb7;color:#fff;width: 118px;border-radius: 5px;font-size: 16px;margin-left: 35px;">点击获取链接</div>
+
+                        <div class="col-xs-12 url-div3" style="display: none;">
+							<div class="ml-lg col-sm-11">
+
+								<div class="col-md-4 center panel-group">
+									<img class="img-responsive" src="{$tgqc[0]}">
+									<input id='img-link-0' class="copy-text" value="{$tgqc[0]}">
+									<button class="btn btn-blue J-copy-tbn"  data-clipboard-text="{$tgqc[0]}"
+											data-clipboard-target="#img-link-0">
+										复制地址
+									</button>
+								</div>
+								<div class="col-md-4 center panel-group">
+									<img class="img-responsive" src="{$tgqc[1]}">
+									<input id='img-link-1' class="copy-text" value="{$tgqc[1]}">
+									<button class="btn btn-blue J-copy-tbn"  data-clipboard-text="{$tgqc[1]}"
+											data-clipboard-target="#img-link-1">
+										复制地址
+									</button>
+								</div>
+								<div class="col-md-4 center panel-group">
+									<img class="img-responsive" src="{$tgqc[2]}">
+									<input id='img-link-2' class="copy-text" value="{$tgqc[2]}">
+									 <button class="btn btn-blue J-copy-tbn"  data-clipboard-text="{$tgqc[2]}"
+											data-clipboard-target="#img-link-2">
+										复制地址
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+</div>
+    </div><!-- /.main-content -->
+            <include file="Public/footer"/>
+        </div><!-- /.main-container -->
+        <div class="alertMassage" style="display:none;">
+            <span>是否复制到剪切板</span>
+            <span id="msg"></span>
+
+            <p>
+                <button class="enter" value="1" onclick="">确认</button>
+                <button class="del" value="0">取消</button>
+            </p>
+        </div>
+        <div class="modal fade" id="loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop='static'>
+            <div role="document" style="position: relative;width: 100%;height: 100%;text-align: center;display: table;">
+                <div style="display: table-cell;vertical-align: middle;">
+					<img style="width:5%;min-width:150px" src="__PUBLIC__/img/loading.gif"/>
+				</div>
+            </div>
+        </div>
+        <script>
+            var domain_api = "{$domain_api}?packet_id={$packet_id}";//域名综合管理后台请求接口
+            var log_api = "{:U('Promotion/add_domain_log')}";
+         
+            function get_domain(div_num){
+                $('#loading').modal('show');
+                $.ajax({
+                    url:domain_api,
+                    dataType:'jsonp',
+                    success:function(data){
+                        if(data.group_domain){
+                            localStorage.setItem("group_domain",data.group_domain);
+                            //添加域名获取日志
+                            $.getJSON(log_api+'&group_domain='+data.group_domain,function(json){
+                                $("#wxg-link1").val(json.longurl);/*长链接*/
+                                $("#wxg-link2").val(json.shorturl);/*长链接*/
+                                /*$("#js-link").val(json.js_domain);
+                                $("#js-link1").attr('data-clipboard-text',json.js_domain);*/
+                                /*推广海报*/
+                                $(".url-div3 .panel-group").each(function(k,v){
+                                    $(this).find("img").attr("src",json.tg_img[k]);
+                                    $(this).find("input").val(json.tg_img[k]);
+                                    $(this).find("button").attr("data-clipboard-text",json.tg_img[k]);
+                                });
+                                $('#loading').modal('hide');
+                            });
+                        }
+                    }
+                });
+            }
+            $(function () {
+                /***************** 点击显示推广链接 ******************/
+                localStorage.setItem("group_domain",'');
+                $(".get-url-div").on("click",function(){
+                    var div_num = $(this).attr("div-num");
+                    var group_domain = localStorage.getItem("group_domain");
+                    if(!group_domain){
+                        get_domain(div_num);
+                    }
+                    $(".get-url-div"+div_num).hide();
+                    $(".url-div"+div_num).show();
+                });
+                /***************** 点击显示推广链接 end ******************/
+
+                $(".btn-blue").click(function () {
+                    var Url = $(this).parents("tr").prev().find("input").val();
+                    console.log(Url);
+                    //copyToClipboard(Url);
+                    //$(".alertMassage").css({display:"block"});
+                });
+                
+                $(".copy-text").on("click", function () {
+                   $(this).select();
+                });
+                $(".copy-text").on("focus", function () {
+                   $(this).select();
+                });
+
+                var clipboard = new Clipboard('.J-copy-tbn');
+                clipboard.on('success', function(e) {
+                    alert('复制成功');
+
+                    e.clearSelection();
+                });
+
+                clipboard.on('error', function(e) {
+                    alert('复制失败,请收工选择复制');
+                });
+            })
+            function copyToClipboard(maintext) {
+                if (window.clipboardData){
+                    window.clipboardData.setData("Text", maintext);
+                }else if (window.netscape){
+                    try{
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    }catch(e){
+                        alert("该浏览器不支持一键复制！n请手工复制文本框链接地址～");
+                    }
+
+                    var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+                    if (!clip) return;
+                    var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+                    if (!trans) return;
+                    trans.addDataFlavor('text/unicode');
+                    var str = new Object();
+                    var len = new Object();
+                    var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+                    var copytext=maintext;
+                    str.data=copytext;
+                    trans.setTransferData("text/unicode",str,copytext.length*2);
+                    var clipid=Components.interfaces.nsIClipboard;
+                    if (!clip) return false;
+                    clip.setData(trans,null,clipid.kGlobalClipboard);
+                }
+                $("#msg").text(maintext);
+                $(".del").click(function(){
+                    $(".alertMassage").hide(2);
+                    $("#msg").text("");
+                });
+                $(".enter").click(function(){
+                    $(".alertMassage").hide(2);
+                })
+            }
+        </script>
+        <include file="Public/footerjs"/>
+</body>
+</html>

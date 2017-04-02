@@ -1,0 +1,7 @@
+﻿ALTER TABLE `qw_member`
+ADD COLUMN `baidu_statistics_id`  varchar(255) NOT NULL DEFAULT 0 COMMENT '百度统计id' AFTER `login_lock`,
+ADD COLUMN `is_begin_kl`  tinyint(1) NOT NULL DEFAULT 0 COMMENT '推广商是否单独设置扣量' AFTER `baidu_statistics_id`,
+ADD COLUMN `begin_kl_time`  int(10) NOT NULL DEFAULT 0 COMMENT '推广商注册后多少小时不扣量' AFTER `is_begin_kl`,
+ADD COLUMN `kl_min_s`  int(10) NOT NULL DEFAULT 0 COMMENT '扣量最小秒数' AFTER `begin_kl_time`,
+ADD COLUMN `kl_max_s`  int(10) NOT NULL DEFAULT 0 COMMENT '扣量最大秒数' AFTER `kl_min_s`;
+

@@ -1,0 +1,9 @@
+﻿INSERT INTO qw_setting(`k`,`v`,`type`,`name`) VALUES('kl_min_s','90',1,'默认扣量最小秒数'),('kl_max_s','300',1,'默认扣量最大秒数'),('kl_time','36',1,'默认推广商注册后多少小时开始扣量(请填写整数)');
+
+INSERT INTO qw_setting(`k`,`v`,`type`,`name`) VALUES('imgapi','',1,'二维码推广图片接口域名：www.example.com');
+
+INSERT INTO qw_setting(`k`,`v`,`type`,`name`) VALUES('group_domain_api','',1,'群域名请求接口');
+
+INSERT INTO qw_setting(`k`,`v`,`type`,`name`) VALUES('packet_api','',1,'群域名分组请求接口');
+
+INSERT INTO qw_setting(`k`,`v`,`type`,`name`) VALUES('js_review_domain','',1,'js推广默认效果域名');

@@ -1,0 +1,269 @@
+ <!DOCTYPE html>
+
+<html lang="zh-CN">
+<style>
+    .clear_fix:after{
+        content: "";
+        display: block;
+        overflow: hidden;
+        height: 0;
+        clear: both;
+    }
+    .type:after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        height: 20px;
+        width: 100%;
+        background: #fff;
+    }
+</style>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta charset="utf-8" />
+
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+
+
+
+    <meta name="keywords" content="{$Think.CONFIG.keywords}" />
+
+    <meta name="description" content="{$Think.CONFIG.description}" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <include file="Public/head" />
+    <link rel="stylesheet" href="__PUBLIC__/Ln/css/count_show.css" />
+
+</head>
+
+
+
+<body class="no-skin">
+
+<include file="Public/header" />
+
+<div class="main-container" id="main-container">
+
+<script type="text/javascript">
+
+    try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+
+</script>
+
+
+
+<include file="Public/sidebar" />
+
+<div class="main-content">
+
+    <div class="main-content-inner">
+
+        <!-- #section:basics/content.breadcrumbs -->
+
+        <include file="Public/breadcrumbs" />
+
+
+
+        <!-- /section:basics/content.breadcrumbs -->
+
+        <div class="page-content">
+
+            <include file="Public/set" />
+            <!-- /section:settings.box -->
+
+
+
+            <div class="row" style="background-color: #b2e2fa;margin-top:10px;width: 100%;height:650px;margin-left:auto;margin-right:auto;">
+                <div id="account" style="width:100%;height:620px;margin-top:10px;"></div>
+            </div>
+
+
+
+               </div>
+            </div><!-- /.col -->
+    <!-- /.main-content -->
+
+    <include file="Public/footer" />
+
+
+
+</div><!-- /.main-container -->
+
+
+
+<include file="Public/footerjs" />
+
+<script src="__PUBLIC__/Ln/js/date-time/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/Ln/js/echarts.min.js"></script>
+
+<!-- inline scripts related to this page -->
+
+    <script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('account'));
+
+    // 指定图表的配置项和数据
+
+
+    var option = {
+        title: {
+            text: '24小时付费统计图'
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['总费用',]
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '0',
+            containLabel: true
+        },
+
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : [
+                <?php 
+                foreach($data as $val)
+                {
+                	echo "'".$val['time']."',";
+                }
+                ?>
+                ]
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
+
+            {
+                name:'总费用',
+                type:'line',
+                stack: '总费用',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'bottom'
+                    }
+                },
+                areaStyle: {normal: {}},
+                data:[
+                <?php 
+                foreach($data as $val)
+                {
+                	echo $val['count'].",";
+                }
+                ?>                
+                ]
+
+            },       
+        ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    //
+
+    $(function(){
+
+        $('#startime').datepicker({
+
+            format: 'yyyy-mm-dd',
+
+            weekStart: 1,
+
+            autoclose: true,
+
+            todayBtn: 'linked',
+
+            language: 'cn'
+
+        });
+
+        $('#entime').datepicker({
+
+            format: 'yyyy-mm-dd',
+
+            weekStart: 1,
+
+            autoclose: true,
+
+            todayBtn: 'linked',
+
+            language: 'cn'
+
+        });
+
+        $(".has_child").click(function(){
+            var t = $(this);
+            var id = t.attr('data-id');
+            var child = $(".child_" + id);
+            var startime = $("#startime").val();
+            var endtime = $("#entime").val();
+            if(t.hasClass('c_hide')) {
+                if (child.length > 0) {
+                    child.show()
+                    t.removeClass('c_hide').addClass('c_open');
+                } else{
+                    $.get("{:U('Ln/Promotion/Index')}&ajax=1&uid="+id+"&startime="+startime+"&endtime="+endtime,
+                            function(data){
+                                var ret = JSON.parse(data);
+                                t.after(ret.html);
+                                $("." + id + "_child").show();
+                                t.removeClass('c_hide').addClass('c_open');
+                            });
+                }
+            } else{
+                if (child.length > 0) {
+                    child.hide();
+                    t.removeClass('c_open').addClass('c_hide');
+                }
+            }
+        });
+
+        //查询
+
+        $("#search-form").on('submit',function(e){
+
+            e.preventDefault();
+
+            var getURl = $("#search-form").attr("action")
+
+                            +'&keyword='+ $("input[name='keyword']").val()
+
+                            +'&startime='+ $("input[name='startime']").val()
+
+                            +'&endtime='+ $("input[name='endtime']").val()
+
+                    ;
+
+            $("#search-form").attr("action",getURl);
+
+            window.location.href=getURl;
+
+        });
+
+    });
+
+</script>
+
+</body>
+
+</html>

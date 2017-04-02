@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+    <meta name="keywords" content="{$Think.CONFIG.keywords}" />
+    <meta name="description" content="{$Think.CONFIG.description}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <include file="Public/head" />
+    <link rel="stylesheet" href="__PUBLIC__/Ln/css/admin.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Ln/css/amazeui.min.css" />
+    <style type="text/css">
+    .show_button{border: 1px solid #999;width:100px;float: left;text-align: center;margin:0 10px 10px 0;line-height: 30px;cursor: pointer;}
+    .ccc{background-color: #ccc;}
+    .show_button:hover{text-decoration:none;}
+    </style>
+</head>
+
+<body class="no-skin">
+<include file="Public/header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    <include file="Public/sidebar" />
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- #section:basics/content.breadcrumbs -->
+            <include file="Public/breadcrumbs" />
+            <!-- /section:basics/content.breadcrumbs -->
+            <div class="page-content">
+                <include file="Public/set" />
+                <!-- /section:settings.box -->
+                <div class="row">                    <a class="show_button <if condition='$type eq 0'>ccc</if>" href="<?php echo U('Ln/Spared/index',array('type'=>0)) ?>" >普通域名</a>                    <a class="show_button <if condition='$type eq 1'>ccc</if>"  href="<?php echo U('Ln/Spared/index',array('type'=>1))?>" >CDN域名</a>                    <a class="show_button <if condition='$type eq 2'>ccc</if>" href="<?php echo U('Ln/Spared/index',array('type'=>2)) ?>" >朋友圈域名</a>                    <a class="show_button <if condition='$type eq 3'>ccc</if>"  href="<?php echo U('Ln/Spared/index',array('type'=>3))?>" >微信群域名</a>
+                </div>
+                <div class="row">
+                    <div class="admin-content">
+                        <div class="am-g" style="margin-top:20px;">
+                            <div class="am-u-md-8">
+                                <div class="am-panel am-panel-default">
+                                    <div class="am-panel-hd am-cf"><!--域名列表(未充值跳转页面)--></div>
+                                    <div id="collapse-panel-4" class="am-panel-bd am-collapse am-in">
+                                        <div class="weixin_list" style="padding-left:20px;">
+                                            <div class="weixin am-g"  >
+                                                <!--<a  <?php if($type =="1"){ echo ' class="am-btn am-btn-danger" ';}else{ echo 'class="am-btn am-btn-primary"'; }?>
+                                                    href="?type=1">启用的域名</a>
+                                                <a <?php if($type =="2"){ echo ' class="am-btn am-btn-danger" ';}else{ echo 'class="am-btn am-btn-primary"'; }?>
+                                                    href="?type=2">拦截的域名</a>
+                                                <a <?php if($type =="3"){ echo ' class="am-btn am-btn-danger" ';}else{ echo 'class="am-btn am-btn-primary"'; }?>
+                                                href="?type=3">备用的域名</a>-->
+                                                <table class="am-table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="width:4%"> ID</th>
+                                                        <th>域名</th>
+                                                        <th style="width:10%">状态</th>
+                                                        <th>操作</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="app">
+                                                    <volist name="domainlist" id="v" key="k">
+                                                    <tr class="show_<?php echo  ceil(($k+1)/30);?> qccode">
+                                                        <td >{$v['id']}</td>
+                                                        <td>{$v['url']}</td>
+                                                        <td >弃用</td>
+                                                        <td>
+                                                            <a href="<?php echo U('Ln/Spared/Spared_save',array('id'=>$v['id']));?>">恢复使用</a>
+                                                        </td>
+                                                    </tr>
+                                                    </volist>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {$page}
+                </div><!-- /.page-content -->
+            </div>
+        </div><!-- /.main-content -->
+        <include file="Public/footer" />
+    </div>
+</div>
+<include file="Public/footerjs" />
+<!-- /.main-container -->
+<script type="text/javascript">
+    function show(page,obj){
+        $(".qccode").hide();
+        if(obj){
+            $(".ccc").removeClass("ccc");
+            $(obj).addClass("ccc");
+        }
+        $(".show_"+page).show();
+    }
+    show(1);
+    $(function(){
+        $(".del").click(function(){
+            var url = $(this).attr('val');
+            bootbox.confirm({
+                title: "系统提示",
+                message: "确定要删除?",
+                callback:function(result){
+                    if(result){
+                        window.location.href = url;
+                    }
+                },
+                buttons: {
+                    "cancel" : {"label" : "取消"},
+                    "confirm" : {
+                        "label" : "确定",
+                        "className" : "btn-danger"
+                    }
+                }
+            });
+        });
+    });
+
+
+</script>
+</body>
+</html>

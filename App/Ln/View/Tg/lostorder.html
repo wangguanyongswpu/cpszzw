@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>{$current['title']}-{$Think.CONFIG.title}</title>
+		<meta name="keywords" content="{$Think.CONFIG.keywords}" />
+		<meta name="description" content="{$Think.CONFIG.description}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<include file="Public/head" />
+   </head>
+	<body class="no-skin">
+		<include file="Public/header" />
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+			<include file="Public/sidebar" />
+			<div class="main-content">
+				<div class="main-content-inner">
+					<!-- #section:basics/content.breadcrumbs -->
+					<include file="Public/breadcrumbs" />
+					<!-- /section:basics/content.breadcrumbs -->
+					<div class="page-content">
+						<div class="row">
+							<form class="form-inline" method="post" action="{:U('lostorder')}">
+								<div class="input-group ">
+									<select name="pay" style="margin: 0 0 0 12px">
+										<option value="1">订单号</option>
+										<option value="2" <if condition="($search['pay'] == 2)">selected</if> >第三方订单号</option>
+									</select>
+								</div>
+								<input class="form-control" name="pay_list" value="{$search['pay_list']}" type="text"/>
+								<label class="inline">&nbsp;&nbsp;推广商ID</label>
+								<input class="form-control" name="ref_id" value="{$search['ref_id']}" type="text"/>
+								<label class="inline">&nbsp;&nbsp;开始日期：</label>
+								<div class="input-group ">
+									<input class="form-control" id="startime" value="{$search['stime']}" name="stime" type="text" data-date-format="dd-mm-yyyy" />
+									<span class="input-group-addon">
+											<i class="ace-icon fa fa-calendar bigger-110"></i>
+										</span>
+								</div>
+
+								<label class="inline">&nbsp;&nbsp;结束日期</label>
+								<div class="input-group ">
+									<input class="form-control" id="entime" value="{$search['etime']}" name="etime" type="text" data-date-format="dd-mm-yyyy" />
+									<span class="input-group-addon">
+											<i class="ace-icon fa fa-calendar bigger-110"></i>
+										</span>
+								</div>
+								<button type="submit" class="btn btn-purple btn-sm" >
+									<span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+									Search
+								</button>
+							</form>
+						</div>
+
+						<div class="space-4"></div>
+						<!-- /section:settings.box -->
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+
+									<table class="table table-striped table-bordered table-hover">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>用户名</th>
+											<th>一级推广商ID</th>
+											<th>一级推广商</th>
+											<th>二级推广商ID</th>
+											<th>二级推广商</th>
+											<th>收入金额</th>
+											<th>订单号</th>
+											<th>付款时间</th>
+											<th>扣量</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>{$order['id']}</td>
+											<td>{$order['username']}</td>
+											<td>{$order['ref1_id']}</td>
+											<td>{$order['ref1_name']}</td>
+											<td>{$order['ref2_id']}</td>
+											<td>{$order['ref2_name']}</td>
+											<td>{$order['pay_amount']}元</td>
+											<td>{$order['pay_serial']}</td>
+											<td>{$order['pay_time']}</td>
+											<td>{$order['kouliang']}</td>
+											<td>
+												<if condition="(isset($order)) and ($order.account eq 0)">
+													<a href="{:U('orderaccount',array('account'=>1,'id'=>$order['id']))}">扣量恢复</a>
+												<elseif condition="$order.account eq -1" />
+													<form action="{:U('Tg/orderaccount')}" method="get" id="orderform">
+														推广商ID：<input type="text" name="refid" id="refid">
+														<input type="hidden" name="orderid" id="orderid" value="{$order['id']}">
+														<input type="submit" value="添加订单来源">
+													</form>
+												</if>
+												<a href="{:U('updateaccount',array('id'=>$order['id']))}">修改</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+			<include file="Public/footer" />
+		</div><!-- /.main-container -->
+		<include file="Public/footerjs" />
+		<!-- inline scripts related to this page -->
+		<script src="__PUBLIC__/Ln/js/date-time/bootstrap-datepicker.js"></script>
+		<script type="text/javascript">
+		function showcode(id){
+		var url = $('#light'+id).attr('value');
+			 var qrcode = new QRCode(document.getElementById("light"+id), {
+				width : 96,//设置宽高
+				height : 96
+			});
+			qrcode.makeCode(url);
+		}
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				jQuery(function($){
+					$('#startime').datepicker({
+						format: 'yyyy-mm-dd',
+						weekStart: 1,
+						autoclose: true,
+						todayBtn: 'linked',
+						language: 'cn'
+					});
+					$('#entime').datepicker({
+						format: 'yyyy-mm-dd',
+						weekStart: 1,
+						autoclose: true,
+						todayBtn: 'linked',
+						language: 'cn'
+					});
+				});
+
+			});
+
+		</script>
+	</body>
+</html>
+
