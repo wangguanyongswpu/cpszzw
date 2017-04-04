@@ -93,11 +93,11 @@ class MemberController extends ComController
             $where .= " and {$prefix}member.uid = ".I('get.suid','','trim');
         }
 
-		if(I("get.packet_id") && I("get.packet_id")!="none"){
+		/*if(I("get.packet_id") && I("get.packet_id")!="none"){
 			$where .= " AND {$prefix}member.packet_id='".I("get.packet_id")."'";
 		}elseif(I("get.packet_id") && I("get.packet_id")=="none"){
 			$where .= " AND ({$prefix}member.packet_id='0' or {$prefix}member.packet_id is null)";
-		}
+		}*/
 
 		$user = M('member');
 		$count = $user->join("{$prefix}auth_group_access g ON {$prefix}member.uid=g.uid",'LEFT')->where($where)->count();
@@ -151,7 +151,7 @@ class MemberController extends ComController
 			}else{
 				$data = $user->field("user")->where(array('uid'=>$value['cid']))->select();
 				$list[$key]['puser'] = $data[0]['user'];
-				if($u["gid"]==1){
+				/*if($u["gid"]==1){
 					$packet_api = M('setting')->where('k="packet_api"')->getField('v');
 					//$packet = M('packet')->field('id,alias')->select();
 					//接口获取域名分组列表
@@ -168,7 +168,7 @@ class MemberController extends ComController
 					}
 					$packet_html .=  '</select>';
 					$list[$key]['packet'] = $packet_html;
-				}
+				}*/
 				$child_count = 0;
 				if ($u['uid'] != $value['uid'] && $value['gid'] > 1) {
 					$child_count = M('member')->where("cid={$value['uid']}")->count();
@@ -347,9 +347,9 @@ class MemberController extends ComController
 			$uid = I('get.uid',0,'intval');
 
 			$gid = I('get.gid',0,'intval');
-			if($gid != 2){
+			/*if($gid != 2){
 				$res = M('member')->data(array('packet_id'=>''))->where("uid='$uid'")->save();
-			}
+			}*/
 
 			M('auth_group_access')->data(array('group_id'=>$gid))->where("uid='$uid'")->save();
 
@@ -361,25 +361,25 @@ class MemberController extends ComController
 			$packet_id = I('get.packet_id',0,'intval');
 			$user_name = member($uid,'user');
 
-			$res = M('member')->data(array('packet_id'=>$packet_id))->where("uid='$uid' or cid='$uid'")->save();
+			/*$res = M('member')->data(array('packet_id'=>$packet_id))->where("uid='$uid' or cid='$uid'")->save();
 			if($res){
 				addlog('分销商中修改微信分组，UID：'.$uid.'  姓名 '.$user_name['user'],false,1);
 				die('1');
 			}else{
 				die('0');
-			}
+			}*/
 
 		}
 
 		if($ajax == 'change_puser'){
 			$uid = I('get.uid',0,'intval');
 			$pId = I('get.pId',0,'intval');
-			$res = M('member')->data(array('cid'=>$pId,'packet_id' => ''))->where("uid='$uid'")->save();
+			/*$res = M('member')->data(array('cid'=>$pId,'packet_id' => ''))->where("uid='$uid'")->save();
 			if($res){
 				die('1');
 			}else{
 				die('0');
-			}
+			}*/
 		}
 
 		$uid = isset($_POST['uid'])?intval($_POST['uid']):false;
@@ -476,14 +476,14 @@ class MemberController extends ComController
 			}
 			$data['user'] = trim($user);
 			$data['t'] = time();
-			if($u["gid"]==1){
+			/*if($u["gid"]==1){
 				$data["packet_id"] = $_POST['packet_id'];
 			}elseif($u["gid"]==2){
 				$packet_id = M("member")->where("uid=".$u["uid"])->getField("packet_id");
 				if($packet_id){
 					$data["packet_id"] = $packet_id;
 				}
-			}
+			}*/
 			$uid = M('member')->data($data)->add();
 			M('auth_group_access')->data(array('group_id'=>$group_id,'uid'=>$uid))->add();
 
@@ -549,11 +549,11 @@ class MemberController extends ComController
 		$utype=M('member')->where('uid ='.$data['uid'])->find();
 		$ucps=$utype['cps_type'];
 		$utype['gid'] = $gid;
-		if($gid==1){
+		/*if($gid==1){
 			$packet_api = M('setting')->where('k="packet_api"')->getField('v');
 			//接口获取域名分组列表
 			$this->packet_list = json_decode($this->httpGet($packet_api),true);
-		}
+		}*/
 		$this->assign('user',$utype);
 		$this->assign('ucps',$ucps);
 		$this->assign('usergroup',$usergroup);

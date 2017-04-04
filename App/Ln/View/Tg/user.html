@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <meta charset="utf-8"/>
+
+    <title>{$current['title']}-{$Think.CONFIG.title}</title>
+
+    <meta name="keywords" content="{$Think.CONFIG.keywords}"/>
+
+    <meta name="description" content="{$Think.CONFIG.description}"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+    <include file="Public/head"/>
+    <style>
+    </style>
+
+</head>
+
+<body class="no-skin">
+
+<include file="Public/header"/>
+
+<div class="main-container" id="main-container">
+
+    <script type="text/javascript">
+
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+
+    </script>
+
+
+    <include file="Public/sidebar"/>
+
+    <div class="main-content">
+
+        <div class="main-content-inner">
+
+            <!-- #section:basics/content.breadcrumbs -->
+            <include file="Public/breadcrumbs" />
+            <!-- /section:basics/content.breadcrumbs -->
+
+            <div class="page-content">
+
+                <include file="Public/set"/>
+                <!-- /section:settings.box -->
+                <div class="row">
+                    <form class="form-inline" action="{:U('user')}" method="get" id="search-form">
+                        <button type="button" class="btn btn-purple btn-sm seven_day">七日图表</button>
+						<button type="button" class="btn btn-purple btn-sm two_day">二日图表</button>
+                    </form>
+                </div>
+                <div class="space-4"></div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="account" style="width:100%;height:620px;margin-top:10px;"></div>
+                        <?php if($gid == 1){?>
+                        <a href="javascript:export_earnings()">导出收益</a>
+                        <?php }?>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div>
+                </div><!-- /.col -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+
+        <include file="Public/footer"/>
+
+
+    </div><!-- /.main-container -->
+
+
+    <include file="Public/footerjs"/>
+
+    <script src="__PUBLIC__/Ln/js/echarts.min.js"></script>
+
+    <!-- inline scripts related to this page -->
+
+    <script type="text/javascript">
+	
+		// 基于准备好的dom，初始化echarts实例
+
+    var myChart = echarts.init(document.getElementById('account'));
+
+
+
+    // 指定图表的配置项和数据
+	
+	var option = {
+		title : {
+			text: '充值图表',
+		},
+		tooltip : {
+			trigger: 'axis'
+		},
+		legend: {
+			data:['总充值金额','充值用户数','未充值用户数']
+		},
+		toolbox: {
+			show : true,
+			feature : {
+				mark : {show: true},
+				dataView : {show: true, readOnly: false},
+				magicType : {show: true, type: ['line', 'bar']},
+				restore : {show: true},
+				saveAsImage : {show: true}
+			}
+		},
+		calculable : true,
+		xAxis : [
+			{
+				type : 'category',
+				data : [<?php 
+                foreach($data as $key=>$val)
+                {
+                	echo "'".$key."',";
+                }
+                ?>]
+			}
+		],
+		yAxis : [
+			{
+				type : 'value'
+			}
+		],
+		series : [
+			{
+				name:'总充值金额',
+				type:'bar',
+				data:[<?php 
+                foreach($data as $val)
+                {
+                	echo $val['pay_amount'].",";
+                }
+                ?>],
+				markPoint : {
+					data : [
+						{type : 'max', name: '最大值'},
+						{type : 'min', name: '最小值'}
+					]
+				},
+				markLine : {
+					data : [
+						{type : 'average', name: '平均值'}
+					]
+				}
+			},
+			{
+				name:'充值用户数',
+				type:'bar',
+				data:[<?php 
+                foreach($data as $val)
+                {
+                	echo $val['pay_num'].",";
+                }
+                ?>   ],
+				markLine : {
+					data : [
+						{type : 'average', name : '平均值'}
+					]
+				}
+			},
+			{
+				name:'未充值用户数',
+				type:'bar',
+				data:[<?php 
+                foreach($data as $val)
+                {
+                	echo $val['no_pay_num'].",";
+                }
+                ?>],
+				markLine : {
+					data : [
+						{type : 'average', name : '平均值'}
+					]
+				}
+			}
+		]
+	};
+    // 使用刚指定的配置项和数据显示图表。
+
+    myChart.setOption(option);
+
+        function day_num(num) {
+            var getURl = $("#search-form").attr("action")
+			getURl+='&day_num='+num;
+			$("#search-form").attr("action", getURl);
+			window.location.href = getURl;
+        }
+        $(function () {
+			var getURl = $("#search-form").attr("action")
+			$('.seven_day').click(function(){
+				day_num(7);
+			});
+			$('.two_day').click(function(){
+				day_num(2);
+			});
+
+        });
+
+    </script>
+
+</body>
+
+</html>
