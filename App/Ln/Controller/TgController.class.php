@@ -172,7 +172,155 @@ class TgController extends ComController
 
         $this->display();
     }
+	
+	public function user()
+    {
 
+        $prefix = C('DB_PREFIX');
+
+        $p = isset($_GET['p']) ? intval($_GET['p']) : '1';
+        $pagesize = 15;#每页数量
+        $offset = $pagesize * ($p - 1);//计算记录偏移量
+        $limit = $offset . "," . $pagesize;
+
+        $where = "1=1";
+
+        $keyword = empty($_GET['keyword']) ? '' : htmlentities($_GET['keyword']);
+        if ($keyword) {
+            $where .= " AND {$prefix}member.user like '%{$keyword}%'";
+        }
+
+        $regWhere = $pWhere = '';
+        $loginuser = $this->getuserid();
+        $uid = empty(I('get.uid')) ? 0 : intval(I('get.uid'));
+        if (empty($uid)) {
+            $user = $this->getuserid();
+        } else {
+            $user = M('auth_group_access')->field('uid,group_id as gid')->where("uid={$uid}")->find();
+        }
+
+        $total = [];
+        $ajax = empty(I('get.ajax')) ? 0 : I('get.ajax');
+        if ($ajax) {
+            $limit = '';
+            $where .= " AND {$prefix}member.cid={$user['uid']}";
+        } else {
+            if ($user['gid'] == 1) {
+                $total = [
+                    ['uid' => '',
+                        'user' => '总计',
+                        'gid' => -1
+                    ], ['uid' => '',
+                        'user' => '未知分销商',
+                        'gid' => 0
+                    ]
+                ];
+                $where .= " AND g.group_id=2";
+            } else {
+                $where .= " AND g.group_id <> 1 AND ({$prefix}member.uid={$user['uid']} OR {$prefix}member.cid={$user['uid']})";
+            }
+        }
+
+        $date = [
+            'start' => isset($_GET['startime']) ? $_GET['startime'] : date('Y-m-d') . " 00:00:00",
+            'end' => isset($_GET['endtime']) ? $_GET['endtime'] : ""
+        ];
+        $startime = strtotime($date['start']);
+        $endtime = empty($date['end']) ? 0 : strtotime($date['end']);
+        if (!empty($startime) && !empty($endtime)) {
+            $regWhere .= " AND {$prefix}register_log.reg_time >= $startime AND {$prefix}register_log.reg_time <= $endtime";
+            $pWhere .= " AND {$prefix}pay_log.pay_time >= $startime AND {$prefix}pay_log.pay_time <= $endtime";
+        } elseif (!empty($startime)) {
+            $regWhere .= " AND {$prefix}register_log.reg_time >= $startime ";
+            $pWhere .= " AND {$prefix}pay_log.pay_time >= $startime";
+        } elseif (!empty($endtime)) {
+            $regWhere .= " AND {$prefix}register_log.reg_time <= $endtime ";
+            $pWhere .= " AND {$prefix}pay_log.pay_time <= $endtime";
+        }
+
+        $order = "{$prefix}member.uid ASC";
+        //$order = "CASE WHEN g.group_id=2 THEN {$prefix}member.uid ELSE {$prefix}member.cid END,{$prefix}member.uid";
+        //echo $where;die;
+        $count = M('member')->join("{$prefix}auth_group_access g ON {$prefix}member.uid=g.uid", 'LEFT')->where($where)->count();
+
+        $list = M('member')->field("{$prefix}member.uid,{$prefix}member.cid,{$prefix}member.user,{$prefix}member.enable_deduct,g.group_id AS gid")
+            ->join("{$prefix}auth_group_access g ON {$prefix}member.uid=g.uid", 'LEFT')
+            ->where($where)
+            ->order($order)
+            ->limit($limit)
+            ->select();
+
+        $list = array_merge($total, $list);
+        $Super_list = $this->getSuper();//获取超级管理员列表
+
+        $html = '';
+        $pWhere .= " AND {$prefix}pay_log.pay_amount > 1";
+        foreach ($list as $key => $value) {
+            $where = '1=1';
+            $ksum = 0;
+            $ci_fsum = 0;//次一级推广的资金
+            $title_kz = '';
+            if ($value['gid'] == -1) {
+                $where .= ' AND account>=1';
+            } elseif ($value['gid'] == 1) {
+                $where .= ' AND account>=1';
+            } elseif ($value['gid'] == 2 && !in_array($value['cid'], $Super_list)) {//次一级推广
+                $title_kz = '<font color="red">(次一级推广)</font>';
+                $where .= " AND account>=1 AND ref1_id={$value['uid']}";
+            } elseif ($value['gid'] == 2) {
+                $ci_fsum = $this->countUserMoney($value['uid'], $pWhere);//获取次一级下的充值
+                $where .= " AND account>=1 AND ref1_id={$value['uid']}";
+                $ksum = M('pay_log')->where("account=2 AND ref1_id={$value['uid']}" . $pWhere)->sum('pay_amount');
+
+            } elseif ($value['gid'] == 3) {
+                $where .= " AND account=1 AND ref2_id={$value['uid']}";
+            } elseif ($value['gid'] === 0) {
+                $where .= " AND account>=1 AND ref1_id=0 AND ref1_id='' AND ref1_id IS NULL";
+            }
+
+            $rcount = M('register_log')->where($where . $regWhere)->count();
+            $pcount = M('pay_log')->where($where . $pWhere)->count();
+            $fsum = M('pay_log')->where($where . $pWhere)->sum('pay_amount');
+
+            $fsum += $ci_fsum;//总金额等与 帐号二级推广加上次一级推广的资金
+            if ($ajax) {
+                empty($fsum) && $fsum = 0;
+                $html .= '<tr class="child_' . $user['uid'] . '">';
+                $html .= '<td>&nbsp;&nbsp;&nbsp;&nbsp;' . $value['uid'] . '</td>';
+                $html .= '<td>&nbsp;&nbsp;--&nbsp;' . $value['user'] . $title_kz . '</td>';
+                $html .= '<td>' . $rcount . '</td>';
+                $html .= '<td>' . $pcount . '</td>';
+                $html .= '<td>&yen;' . $fsum . '</td>';
+                $html .= '</tr>';
+            } else {
+                $child_count = 0;
+                if ($user['uid'] != $value['uid'] && $value['gid'] > 1) {
+                    $child_count = M('member')->where("cid={$value['uid']}")->count();
+                }
+                $list[$key]['rcount'] = $rcount;
+                $list[$key]['pcount'] = $pcount;
+                $list[$key]['fsum'] = $fsum == null ? 0 : $fsum;
+                $list[$key]['ksum'] = empty($ksum) ? 0 : $ksum;
+                $list[$key]['has_child'] = empty($child_count) ? false : true;
+            }
+        }
+        //echo M('member')->getLastSql();exit;
+        if ($ajax) {
+            echo json_encode(['html' => $html]);
+            exit;
+        }
+
+
+        $page = new \Think\Page($count, $pagesize);
+
+        $page = $page->show();
+        $this->assign('gid', $user['gid']);
+        $this->assign('list', $list);
+        $this->assign('date', $date);
+        $this->assign('page', $page);
+
+        $this->display();
+    }
     /**
      * 导出收益
      */
@@ -1059,7 +1207,7 @@ class TgController extends ComController
         $api_domain = $tg_domain["api_domain"];
         $show_domain = $tg_domain["show_domain"];
 
-        $url = "http://" . $api_domain . "/index/cache/get_tghb.html?group_domain=" . $group_domain . "&url=" . $generalize['churl'] ."&uid=" . $uid;
+        $url = "http://" . $api_domain . "/index/cache/get_tghb.html?dm=" . $group_domain . "&url=" . $shorturl ."&uid=" . $uid;
         $res = $this->httpGet($url);
         $arr = json_decode($res, true);
 
@@ -1232,15 +1380,19 @@ class TgController extends ComController
             $h = date('H',$k);
             $_ipList[$ymd.':'.$h] = $v;
         }
-        $where = " pay_time >= {$startTime} and pay_time<{$endTime} and pay_amount > 1 ";
+        $where = " pay_time >= {$startTime} and pay_time<{$endTime} and pay_amount >= 1 ";
 
         $klqtotalList = [];
         if($debug){
-            $klqtotalList = M('pay_log')->field("from_unixtime(pay_time,'%Y-%m-%d') as ymd,from_unixtime(pay_time,'%H') as h,sum(pay_amount) as klqsum")->where($where)->group("from_unixtime(pay_time,'%Y%m%d%H') ")->select();
+            $klqtotalList = M('pay_log')->field("pay_time_ymd as ymd,pay_time_h as h,sum(pay_amount) as klqsum")->where($where)->group("pay_time_ymdh,pay_time_ymd,pay_time_h ")->select();
         }
         $where .= " and account>=1 ";
-        $totalList = M('pay_log')->field("from_unixtime(pay_time,'%Y-%m-%d') as ymd,from_unixtime(pay_time,'%H') as h,sum(pay_amount) as sum")->where($where)->group("from_unixtime(pay_time,'%Y%m%d%H') ")->select();
-        if($debug){
+      //echo $where;exit;
+        $totalList = M('pay_log')->field("pay_time_ymd as ymd,pay_time_h as h,sum(pay_amount) as sum")->where($where)->group("pay_time_ymdh,pay_time_ymd,pay_time_h")->select();
+       //$totalList = M('pay_log')->field("pay_time_ymd as ymd,pay_time_h as h,sum(pay_amount) as sum")->where($where)->group("pay_time_ymdh,pay_time_ymd,pay_time_h")->buildSql();
+      //echo M()->getLastSql();
+      //var_dump($totalList);exit;  
+      if($debug){
             foreach ($totalList as $k => $v){
                 foreach ($klqtotalList as $klk => $klv){
                     if($v['ymd'] == $klv['ymd'] && $v['h'] == $klv['h']){
