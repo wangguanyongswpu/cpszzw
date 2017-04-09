@@ -76,15 +76,15 @@ class CacheController extends Controller
 
             $background=$path.$t_path."bgimg".$nub.".jpg";
             $imgdata=[];
-            $imgdata[1]['dst_x']=10;
-            $imgdata[1]['dst_y']=750;
+            $imgdata[1]['dst_x']=40;
+            $imgdata[1]['dst_y']=650;
             $imgdata[1]['src_x']=0;
             $imgdata[1]['src_y']=0;
             $imgdata[1]['dst_w']=270;
             $imgdata[1]['dst_h']=270;
 
-            $imgdata[2]['dst_x']=302;
-            $imgdata[2]['dst_y']=543;
+            $imgdata[2]['dst_x']=100;
+            $imgdata[2]['dst_y']=100;
             $imgdata[2]['src_x']=0;
             $imgdata[2]['src_y']=0;
             $imgdata[2]['dst_w']=220;
@@ -126,10 +126,10 @@ class CacheController extends Controller
         if (file_exists($path . $t_path . $filename)) {
             $img_url = $t_path . $filename;
         } else {
-            $img_url = $this->QrCode($filename, $url);
+            $img_url = $this->QrCode($filename, $get_url);
         }
         $img_arr = [];
-        for($i=1;$i<4;$i++){
+        for($i=1;$i<3;$i++){
             $img_arr[] = $this->getimgl($img_url,$get_url,$i);
         }
         echo json_encode($img_arr);

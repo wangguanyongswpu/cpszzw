@@ -30,7 +30,7 @@ class MemberController extends ComController
 		$cpstype = $this->cpstype();
 		$this->assign('cpstype', $cpstype);
 		$p = isset($_GET['p']) ? intval($_GET['p']) : '1';
-		$pagesize = 10;#每页数量
+		$pagesize = 15;#每页数量
 		$offset = $pagesize * ($p - 1);//计算记录偏移量
 		$limit = $offset . ',' . $pagesize;
 
@@ -93,12 +93,6 @@ class MemberController extends ComController
             $where .= " and {$prefix}member.uid = ".I('get.suid','','trim');
         }
 
-		/*if(I("get.packet_id") && I("get.packet_id")!="none"){
-			$where .= " AND {$prefix}member.packet_id='".I("get.packet_id")."'";
-		}elseif(I("get.packet_id") && I("get.packet_id")=="none"){
-			$where .= " AND ({$prefix}member.packet_id='0' or {$prefix}member.packet_id is null)";
-		}*/
-
 		$user = M('member');
 		$count = $user->join("{$prefix}auth_group_access g ON {$prefix}member.uid=g.uid",'LEFT')->where($where)->count();
 
@@ -117,10 +111,20 @@ class MemberController extends ComController
 		// var_dump($gidd=="1");die();
 		$html = '';
 		foreach($list as $key=>$value){
+        	if ($value['gid'] == 2 && !in_array($value['cid'], $Super_list)) {//次一级推广
+              	if ($ajax) {  
+                  	$list[$key]['user'] .= '<font color="red">(次一级推广)</font>';
+                  	
+              	}else{//次一级推广商 获取上级
+                	$Superior = M('member')->field('user')->where("uid={$value['cid']}")->find();
+					$list[$key]['user'] .= '<font color="red">(上级推广：'.$Superior["user"].')</font>';
+                }
+              $value['user']=$list[$key]['user'];
+            }
 			if($ajax){
-				//$html .= '<tr class="child_'. $u['uid'] .'">';
-				$html .= '<td>&nbsp;&nbsp;&nbsp;&nbsp;'. $value['uid'] .'<input class="uids" type="hidden" name="uids[]" value="'.$value['uid'].'"></td>';
-				$html .= '<td>&nbsp;&nbsp;--&nbsp;'. $value['user'] .'</td>';
+				$html .= '<tr class="child_'. $u['uid'] .'">';
+				$html .= '<td>&para;&minus;&minus;'. $value['uid'] .'<input class="uids" type="hidden" name="uids[]" value="'.$value['uid'].'"></td>';
+				$html .= '<td>&para;&minus;&minus;'. $value['user'] .'</td>';
 				//$html .= '<td>'.$value['remark'].'</td>';
 				$html .= '<td class="grouptd"><span class="group" val="'.$value['uid'].'">' .$value['title'] . '</span></td>';
 				$html .= '<td>' .$value['phone'] . '</td>';
@@ -151,24 +155,6 @@ class MemberController extends ComController
 			}else{
 				$data = $user->field("user")->where(array('uid'=>$value['cid']))->select();
 				$list[$key]['puser'] = $data[0]['user'];
-				/*if($u["gid"]==1){
-					$packet_api = M('setting')->where('k="packet_api"')->getField('v');
-					//$packet = M('packet')->field('id,alias')->select();
-					//接口获取域名分组列表
-					$packet = json_decode($this->httpGet($packet_api),true);
-					$packet_html = '<select name="packet[]" class="packet"> <option value=""> 请选择域名分组</option>';
-					if($packet){
-						foreach($packet as $val){
-							$select ="";
-							if($value['packet_id'] == $val['id']){
-								$select = 'selected';
-							}
-							$packet_html .=  '<option value="'.$val['id'].'" '.$select.' >'.$val['alias'].'</option>';
-						}
-					}
-					$packet_html .=  '</select>';
-					$list[$key]['packet'] = $packet_html;
-				}*/
 				$child_count = 0;
 				if ($u['uid'] != $value['uid'] && $value['gid'] > 1) {
 					$child_count = M('member')->where("cid={$value['uid']}")->count();
@@ -176,7 +162,8 @@ class MemberController extends ComController
 				$list[$key]['date'] = empty($value['t']) ? '' : date('Y年m月d日 H:i:s', $value['t']);
 				$list[$key]['has_child'] = empty($child_count) ? false : true;
 				if($value['gid']==2 && !in_array($value['cid'],$Super_list)){
-					$list[$key]['title']=$value['title'].'(次)';
+					$Superior = M('member')->field('user')->where("uid={$value['cid']}")->find();
+					$list[$key]['title']=$value['title'].'<font color="red">(上级推广：'.$Superior["user"].')</font>';
 				}
 
 			}
@@ -200,12 +187,12 @@ class MemberController extends ComController
 
 		$page	=	new \Think\Page($count,$pagesize);
 		$page = $page->show();
-
+		
 		$this->assign('list',$list);
 		$this->assign('gid', $u['gid']);
 		$this->assign('page',$page);
 		$this->assign('u',$u);
-		$this->assign('packet_list',$packet);
+		$this->assign('packet_list',array());
 		$this->display();
 
 	}

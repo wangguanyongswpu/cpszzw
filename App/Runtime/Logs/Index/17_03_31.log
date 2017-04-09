@@ -1,0 +1,25 @@
+[ 2017-03-31T09:45:20+08:00 ] 116.31.126.153 /index/cache/get_tghb.html?dm=www.wxase.cn&url=http://t.cn/R6pTcqW&uid=8386
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-03-31T12:42:20+08:00 ] 42.236.93.31 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-03-31T12:46:22+08:00 ] 42.236.93.56 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2017-03-31T15:31:19+08:00 ] 116.31.126.105 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-03-31T15:31:28+08:00 ] 58.211.2.138 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+

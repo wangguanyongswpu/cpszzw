@@ -272,7 +272,7 @@
 									</div>
 									<div class="space-4"></div>
 
-									<if condition="in_array($user['uid'],C('FINANCE_IDS'))">
+									
 										<div class="form-group">
 											<label class="col-sm-1 control-label no-padding-right" for="wei_number">微信账号</label>
 												<div class="col-sm-9">
@@ -283,6 +283,7 @@
 												</div>
 										</div>
 										<div class="space-4"></div>
+                          <if condition="in_array($user['uid'],C('FINANCE_IDS'))">
 
 <!--
 										<div class="form-group">

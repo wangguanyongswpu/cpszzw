@@ -120,11 +120,15 @@ class LoginController extends BaseController {
 				//$_SESSION['user_id']=$user['uid'];				
 				setcookie('user_id',$user['uid'],3600*5);
 			}
-
+			//获取用户的权限级别
+			$g_id_ret=M('auth_group_access')->field('group_id')-> where('uid='.$user['uid']) -> find();
 			//  写入登录日志
 			addlog('登录成功。',false,5);
 			//  设置跳转的URL地址
 			$url=U('Ln/Tg/index');
+			if($g_id_ret['group_id']==2 || g_id_ret['group_id']==3){//当其为推广商用户登陆
+				$url=U('Ln/Notice/show');
+			}
 			//  跳转到首页
 			header("Location: $url");
 			exit(0);

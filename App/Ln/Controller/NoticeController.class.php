@@ -8,7 +8,18 @@ namespace Ln\Controller;
 use Ln\Controller\ComController;
 
 class NoticeController extends ComController {
-    public function index()
+    /**
+	* 公告显示
+	**/
+	public function show(){
+		$notice = M('article')->where('aid=5')->find();//获取所有用户都显示的公共公告
+        $notice['content']=base64_decode($notice['content']);
+		$notice['t']=date('Y-m-d',$notice['t']);
+		$this->assign('content', $notice['content']);
+		$this->assign('t', $notice['t']);
+        $this -> display();
+	}
+	public function index()
     {
         $notice = M('article')->field('aid,content,t')->where('sid=15000')->order('aid desc')->select();
 		foreach($notice as $k=>$v){

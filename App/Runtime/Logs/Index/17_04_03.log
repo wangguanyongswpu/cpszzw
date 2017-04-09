@@ -1,0 +1,85 @@
+[ 2017-04-03T04:27:49+08:00 ] 116.31.126.106 /index/cache/get_tghb.html?group_domain%253Dwww.wxase.cn%2526url%253D8389_www.wxase.cn%2526uid%253D8389
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-04-03T04:27:59+08:00 ] 58.211.2.138 /index/cache/get_tghb.html?group_domain%253Dwww.wxase.cn%2526url%253D8389_www.wxase.cn%2526uid%253D8389
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T06:59:16+08:00 ] 42.236.93.56 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-03T08:00:04+08:00 ] 58.211.2.120 /index/cache/get_tghb.html?group_domain%3Dwww.wapes.cn%26url%3D1_www.wapes.cn%26uid%3D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-04-03T08:00:04+08:00 ] 58.211.2.138 /index/cache/get_tghb.html?group_domain%3Dwww.wapes.cn%26url%3D1_www.wapes.cn%26uid%3D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T08:00:04+08:00 ] 58.211.2.60 /index/cache/get_tghb.html?group_domain%3Dwww.wapes.cn%26url%3D1_www.wapes.cn%26uid%3D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-03T08:00:04+08:00 ] 58.211.2.120 /index/cache/get_tghb.html?group_domain%3Dwww.wapes.cn%26url%3D1_www.wapes.cn%26uid%3D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T12:16:11+08:00 ] 116.31.126.153 /index/cache/get_tghb.html?group_domain=www.wapes.cn&url=8391_www.wapes.cn&uid=8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-04-03T12:16:19+08:00 ] 116.31.126.153 /index/cache/get_tghb.html?group_domain=www.wxase.cn&url=8391_www.wxase.cn&uid=8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-04-03T13:50:13+08:00 ] 116.31.126.153 /index/cache/get_tghb.html?group_domain=www.wxase.cn&url=8391_www.wxase.cn&uid=8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-04-03T14:16:18+08:00 ] 116.31.126.153 /index/cache/get_tghb.html?group_domain=www.wapes.cn&url=8391_www.wapes.cn&uid=8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T15:16:25+08:00 ] 58.211.2.120 /index/cache/get_tghb.html?group_domain%253Dwww.wapes.cn%2526url%253D1_www.wapes.cn%2526uid%253D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T17:32:02+08:00 ] 58.211.2.84 /index/cache/get_tghb.html?group_domain%3Dwww.wxase.cn%26url%3D8391_www.wxase.cn%26uid%3D8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T20:05:34+08:00 ] 58.211.2.150 /index/cache/get_tghb.html?group_domain%253Dwww.wxase.cn%2526url%253D8391_www.wxase.cn%2526uid%253D8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-04-03T21:33:02+08:00 ] 116.31.126.153 /index/cache/get_tghb.html?group_domain=www.wxase.cn&url=8391_www.wxase.cn&uid=8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-04-03T21:49:25+08:00 ] 116.31.126.153 /index/cache/get_tghb.html?group_domain=www.wxase.cn&url=8391_www.wxase.cn&uid=8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-04-03T23:34:36+08:00 ] 116.31.126.153 /index/cache/get_tghb.html?group_domain=www.wapes.cn&url=8391_www.wapes.cn&uid=8391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+

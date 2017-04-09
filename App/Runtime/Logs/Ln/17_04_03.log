@@ -1,0 +1,1687 @@
+[ 2017-04-03T02:37:46+08:00 ] 58.211.2.30 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-04-03T03:02:56+08:00 ] 180.153.211.172 /?winzoom%252525253D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-04-03T03:02:56+08:00 ] 180.153.214.188 /?winzoom%252525253D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+
+[ 2017-04-03T03:02:56+08:00 ] 101.226.85.67 /?winzoom%252525253D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-04-03T03:02:56+08:00 ] 101.226.51.229 /?winzoom%252525253D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-04-03T04:08:07+08:00 ] 101.71.55.105 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T05:05:16+08:00 ] 101.71.55.120 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-03T05:05:16+08:00 ] 101.71.55.120 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2017-04-03T05:35:38+08:00 ] 183.57.53.196 /index.php?m%3D%26c%3Dlogin%26a%3Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-04-03T05:35:44+08:00 ] 108.162.246.234 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+ERR: 无法加载控制器:Robots.txt
+
+[ 2017-04-03T05:35:47+08:00 ] 180.153.214.189 /index.php?m%3D%26c%3Dlogin%26a%3Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T05:36:16+08:00 ] 108.162.245.41 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-03T06:32:53+08:00 ] 180.153.206.20 /?winzoom%25252525253D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-04-03T06:39:08+08:00 ] 220.181.51.91 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+ERR: 无法加载控制器:Robots.txt
+
+[ 2017-04-03T06:39:21+08:00 ] 123.125.71.109 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-04-03T06:59:16+08:00 ] 42.236.93.66 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-04-03T06:59:16+08:00 ] 42.236.93.71 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2017-04-03T06:59:16+08:00 ] 42.236.93.71 /22080
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+ERR: 无法加载控制器:22080
+
+[ 2017-04-03T07:04:04+08:00 ] 116.31.126.106 /a/product/68049.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T07:04:13+08:00 ] 58.211.2.30 /a/product/68049.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T07:31:41+08:00 ] 116.31.126.101 /39589
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+ERR: 无法加载控制器:39589
+
+[ 2017-04-03T07:31:50+08:00 ] 58.211.2.114 /a/cnews/68072.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T07:31:50+08:00 ] 58.211.2.84 /39589
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+ERR: 无法加载控制器:39589
+
+[ 2017-04-03T07:32:18+08:00 ] 101.226.66.172 /index.php?m%253D%2526c%253DTg%2526a%253Dindex%2526startime%253D2017-04-01%25252000:00:00%2526endtime%253D2017-04-02%25252000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-03T07:34:17+08:00 ] 58.211.2.24 /67440
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+ERR: 无法加载控制器:67440
+
+[ 2017-04-03T07:45:02+08:00 ] 101.71.55.100 /a/product/23357.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T07:46:44+08:00 ] 116.31.126.153 /a/focus/37120.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T07:46:53+08:00 ] 58.211.2.114 /a/focus/37120.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T07:46:53+08:00 ] 58.211.2.114 /a/product/17639.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T07:46:53+08:00 ] 58.211.2.42 /a/focus/56820.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T07:56:28+08:00 ] 58.211.2.18 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-04-03T08:53:02+08:00 ] 61.151.228.22 /?winzoom%2525252525253D1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-04-03T09:34:07+08:00 ] 58.211.2.72 /index.php?m%3D%26c%3Dlogin%26a%3Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-04-03T09:35:52+08:00 ] 183.57.53.197 /index.php?m%3D%26c%3DSetting%26a%3Dupdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-04-03T09:36:01+08:00 ] 101.226.125.104 /index.php?m%3D%26c%3DSetting%26a%3Dupdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T10:09:46+08:00 ] 180.153.214.152 /index.php?m%25253D%252526c%25253DTg%252526a%25253Dindex%252526startime%25253D2017-04-01%2525252000:00:00%252526endtime%25253D2017-04-02%2525252000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-03T11:40:20+08:00 ] 58.211.2.54 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-03T11:40:22+08:00 ] 58.211.2.54 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2017-04-03T12:00:05+08:00 ] 171.221.138.242 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+
+[ 2017-04-03T12:00:06+08:00 ] 171.221.138.242 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-04-03T12:00:06+08:00 ] 171.221.138.242 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-04-03T12:00:12+08:00 ] 171.221.138.242 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-04-03T12:00:12+08:00 ] 171.221.138.242 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+
+[ 2017-04-03T12:00:15+08:00 ] 171.221.138.242 /index.php?m=&c=Member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T12:00:16+08:00 ] 171.221.138.242 /index.php?m=&c=Member&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2017-04-03T12:00:32+08:00 ] 171.221.138.242 /index.php?m=&c=Member&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+
+[ 2017-04-03T12:00:33+08:00 ] 171.221.138.242 /index.php?m=&c=Member&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T12:02:02+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-03T12:02:02+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+
+[ 2017-04-03T12:02:11+08:00 ] 140.207.185.111 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-04-03T12:02:25+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T12:02:25+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+
+[ 2017-04-03T12:02:38+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-04-03T12:02:42+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T12:02:42+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+
+[ 2017-04-03T12:02:52+08:00 ] 101.226.33.205 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-03T12:03:06+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-04-03T12:03:09+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-04-03T12:03:10+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-04-03T12:03:47+08:00 ] 119.90.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T12:03:47+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2017-04-03T12:03:52+08:00 ] 119.90.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-04-03T12:03:52+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+
+[ 2017-04-03T12:03:56+08:00 ] 180.153.214.198 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-04-03T12:04:17+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T12:04:20+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T12:04:20+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-04-03T12:05:37+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-04-03T12:05:37+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-04-03T12:05:43+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T12:05:43+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T12:06:03+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-04-03T12:06:06+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T12:06:06+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T12:06:36+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T12:06:36+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2017-04-03T12:07:03+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify&1491192423400
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+
+[ 2017-04-03T12:07:11+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T12:07:15+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+
+[ 2017-04-03T12:07:15+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-04-03T12:08:42+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-04-03T12:08:42+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-04-03T12:09:07+08:00 ] 124.161.23.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2017-04-03T12:09:07+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+
+[ 2017-04-03T12:09:07+08:00 ] 223.85.132.35 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2017-04-03T12:09:07+08:00 ] 223.104.9.206 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T12:09:24+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-04-03T12:09:24+08:00 ] 223.104.9.206 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T12:09:37+08:00 ] 223.104.9.206 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+
+[ 2017-04-03T12:09:37+08:00 ] 182.131.12.12 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2017-04-03T12:09:47+08:00 ] 180.153.214.191 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-03T12:09:47+08:00 ] 180.153.201.66 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+
+[ 2017-04-03T12:09:47+08:00 ] 101.226.33.216 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-04-03T12:09:47+08:00 ] 101.226.66.179 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T12:12:00+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T12:12:04+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-04-03T12:12:07+08:00 ] 182.131.12.12 /index.php?m=&c=logout&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+
+[ 2017-04-03T12:12:08+08:00 ] 182.131.12.12 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-04-03T12:12:08+08:00 ] 223.104.9.206 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-04-03T12:12:14+08:00 ] 101.226.89.116 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+
+[ 2017-04-03T12:12:17+08:00 ] 180.153.214.192 /index.php?m=&c=logout&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T12:15:50+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-04-03T12:15:50+08:00 ] 223.104.9.206 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-04-03T12:16:03+08:00 ] 223.104.9.206 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+
+[ 2017-04-03T12:16:03+08:00 ] 182.131.12.12 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-04-03T12:16:08+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+
+[ 2017-04-03T12:16:11+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=add_domain_log&group_domain=www.wapes.cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-04-03T12:16:16+08:00 ] 42.236.93.51 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-04-03T12:16:17+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T12:16:19+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=add_domain_log&group_domain=www.wxase.cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-04-03T12:17:02+08:00 ] 101.71.55.90 /39598/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载控制器:39598
+
+[ 2017-04-03T12:17:02+08:00 ] 101.71.55.90 /11135/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+ERR: 无法加载控制器:11135
+
+[ 2017-04-03T12:17:02+08:00 ] 101.71.55.90 /a/focus/60593.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:02+08:00 ] 101.71.55.90 /a/cnews/68049.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:02+08:00 ] 101.71.55.90 /96222/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载控制器:96222
+
+[ 2017-04-03T12:17:02+08:00 ] 101.71.55.90 /a/product/24604.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:02+08:00 ] 101.71.55.90 /a/product/59523.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:02+08:00 ] 101.71.55.90 /67435/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+ERR: 无法加载控制器:67435
+
+[ 2017-04-03T12:17:03+08:00 ] 101.71.55.90 /a/news/44324.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:03+08:00 ] 101.71.55.90 /221/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+ERR: 无法加载控制器:221
+
+[ 2017-04-03T12:17:03+08:00 ] 58.211.2.24 /a/product/68265.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:03+08:00 ] 101.71.55.90 /a/product/17654.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:03+08:00 ] 58.211.2.24 /a/focus/37181.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:03+08:00 ] 58.211.2.24 /a/focus/56833.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T12:17:03+08:00 ] 58.211.2.24 /157/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+ERR: 无法加载控制器:157
+
+[ 2017-04-03T12:56:46+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-04-03T12:56:46+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-04-03T12:56:55+08:00 ] 180.153.81.212 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T12:57:42+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-04-03T12:57:45+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-04-03T12:57:45+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-04-03T12:57:53+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-03T12:58:58+08:00 ] 119.90.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T12:58:59+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-04-03T12:59:26+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-04-03T12:59:29+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-03T12:59:30+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-04-03T13:00:24+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T13:00:25+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-04-03T13:00:47+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-03T13:00:50+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-04-03T13:00:50+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-04-03T13:01:02+08:00 ] 119.90.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-04-03T13:01:02+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-04-03T13:03:20+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-04-03T13:03:20+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-04-03T13:03:31+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-04-03T13:03:31+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+
+[ 2017-04-03T13:03:59+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T13:04:02+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T13:04:03+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+
+[ 2017-04-03T13:04:48+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T13:04:48+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+
+[ 2017-04-03T13:04:54+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T13:04:54+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T13:05:14+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-04-03T13:05:18+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-04-03T13:05:18+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-04-03T13:05:38+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-04-03T13:05:41+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-04-03T13:05:42+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-04-03T13:05:53+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T13:05:58+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-04-03T13:05:59+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-04-03T13:06:00+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T13:06:00+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-04-03T13:07:47+08:00 ] 119.90.72.187 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-04-03T13:07:47+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-03T13:08:16+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T13:08:19+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-04-03T13:08:19+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+
+[ 2017-04-03T13:08:27+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-04-03T13:08:27+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-03T13:08:59+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T13:09:03+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-04-03T13:09:03+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-04-03T13:09:05+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify&1491196145705
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2017-04-03T13:09:08+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify&1491196148240
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T13:09:10+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify&1491196150021
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T13:09:11+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify&1491196151356
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-04-03T13:09:35+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-04-03T13:09:38+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-04-03T13:09:38+08:00 ] 119.90.72.187 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-04-03T13:13:31+08:00 ] 101.226.64.174 /index.php?m%2525253D%25252526c%2525253DTg%25252526a%2525253Dindex%25252526startime%2525253D2017-04-01%252525252000:00:00%25252526endtime%2525253D2017-04-02%252525252000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-04-03T13:13:41+08:00 ] 117.185.27.114 /index.php?m%2525253D%25252526c%2525253DTg%25252526a%2525253Dindex%25252526startime%2525253D2017-04-01%252525252000:00:00%25252526endtime%2525253D2017-04-02%252525252000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-04-03T13:27:16+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-04-03T13:27:16+08:00 ] 182.140.184.85 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+
+[ 2017-04-03T13:27:17+08:00 ] 223.85.132.34 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-04-03T13:27:20+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-04-03T13:41:54+08:00 ] 101.226.68.215 /index.php?m%253D%2526c%253DSetting%2526a%253Dupdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T13:42:13+08:00 ] 223.104.101.32 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-04-03T13:42:13+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T13:42:29+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify&1491198147966
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-04-03T13:42:29+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify&1491198146546
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+
+[ 2017-04-03T13:42:29+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify&1491198149485
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+
+[ 2017-04-03T13:42:35+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify&1491198150488
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T13:42:41+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify&1491198161040
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-03T13:42:55+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T13:42:55+08:00 ] 223.104.101.32 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-04-03T13:43:05+08:00 ] 223.104.101.32 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-04-03T13:43:08+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-03T13:43:08+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-04-03T13:43:30+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-04-03T13:43:31+08:00 ] 223.104.101.32 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T13:43:40+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-04-03T13:46:12+08:00 ] 223.104.101.32 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-03T13:46:25+08:00 ] 223.104.101.32 /index.php?m=&c=personal&a=profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+
+[ 2017-04-03T13:49:24+08:00 ] 223.104.101.32 /index.php?m=&c=logout&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-04-03T13:49:24+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-03T13:49:24+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-03T13:49:51+08:00 ] 223.104.101.32 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2017-04-03T13:49:51+08:00 ] 223.104.101.32 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T13:50:04+08:00 ] 223.104.101.32 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2017-04-03T13:50:13+08:00 ] 223.104.101.32 /index.php?m=&c=Tg&a=add_domain_log&group_domain=www.wxase.cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T13:57:02+08:00 ] 223.104.101.32 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-03T14:11:16+08:00 ] 223.104.101.60 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T14:11:21+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-04-03T14:11:35+08:00 ] 223.104.101.60 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-04-03T14:11:42+08:00 ] 223.104.101.60 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+
+[ 2017-04-03T14:11:45+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T14:14:55+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-04-03T14:16:15+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T14:16:18+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=add_domain_log&group_domain=www.wapes.cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-04-03T14:19:30+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-04-03T14:19:36+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=index&keyword=&startime=2017-04-03%2000:00:00&endtime=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-03T14:19:39+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-03T15:20:59+08:00 ] 101.71.55.100 /a/news/44324.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T15:25:45+08:00 ] 116.31.126.101 /157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+ERR: 无法加载控制器:157
+
+[ 2017-04-03T15:25:54+08:00 ] 58.211.2.24 /157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+ERR: 无法加载控制器:157
+
+[ 2017-04-03T15:25:54+08:00 ] 119.167.246.88 /157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+ERR: 无法加载控制器:157
+
+[ 2017-04-03T15:25:54+08:00 ] 58.211.2.6 /157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+ERR: 无法加载控制器:157
+
+[ 2017-04-03T15:25:54+08:00 ] 58.211.2.138 /157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+ERR: 无法加载控制器:157
+
+[ 2017-04-03T15:26:16+08:00 ] 42.236.93.71 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T15:26:16+08:00 ] 42.236.93.71 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+
+[ 2017-04-03T15:26:16+08:00 ] 42.236.93.71 /a/product/23292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T15:26:16+08:00 ] 42.236.93.71 /a/product/23292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T15:27:33+08:00 ] 42.236.93.81 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-04-03T15:28:15+08:00 ] 42.236.93.81 /a/product/23292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T15:37:35+08:00 ] 58.211.2.126 /a/cnews/68049.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T15:37:35+08:00 ] 58.211.2.126 /a/cnews/68049.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T15:37:35+08:00 ] 58.211.2.30 /a/cnews/68049.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T15:37:35+08:00 ] 58.211.2.12 /a/cnews/68049.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T15:40:29+08:00 ] 58.211.2.126 /67435
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载控制器:67435
+
+[ 2017-04-03T15:42:29+08:00 ] 58.211.2.126 /11135
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载控制器:11135
+
+[ 2017-04-03T15:47:58+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-04-03T15:47:59+08:00 ] 182.140.177.166 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+
+[ 2017-04-03T15:47:59+08:00 ] 223.85.132.24 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-04-03T15:48:00+08:00 ] 171.221.138.242 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2017-04-03T15:48:12+08:00 ] 171.221.138.242 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-04-03T15:48:12+08:00 ] 182.131.12.12 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-04-03T15:51:33+08:00 ] 58.211.2.24 /a/product/17654.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-03T16:09:45+08:00 ] 101.226.64.174 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-04-03T16:23:09+08:00 ] 183.57.53.222 /index.php?m%3D%26c%3DTg%26a%3Dindex%26keyword%3D%26startime%3D2017-04-03%252000:00:00%26endtime%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2017-04-03T16:23:18+08:00 ] 61.151.226.16 /index.php?m%3D%26c%3DTg%26a%3Dindex%26keyword%3D%26startime%3D2017-04-03%252000:00:00%26endtime%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-03T17:27:13+08:00 ] 223.104.101.60 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+
+[ 2017-04-03T17:27:16+08:00 ] 223.104.101.60 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-04-03T17:27:16+08:00 ] 223.104.101.60 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-04-03T17:44:34+08:00 ] 101.71.55.100 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+ERR: 无法加载控制器:Robots.txt
+
+[ 2017-04-03T17:47:54+08:00 ] 101.226.64.174 /index.php?m%3D%26c%3Dpersonal%26a%3Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-04-03T17:48:03+08:00 ] 101.226.51.227 /index.php?m%3D%26c%3Dpersonal%26a%3Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T17:48:03+08:00 ] 101.226.33.208 /index.php?m%3D%26c%3Dpersonal%26a%3Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T17:48:03+08:00 ] 140.207.185.112 /index.php?m%3D%26c%3Dpersonal%26a%3Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-04-03T17:48:24+08:00 ] 42.227.84.222 /index.php?m%3D%26c%3Dpersonal%26a%3Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-04-03T18:54:01+08:00 ] 110.184.70.164 /index.php?m=&c=PayWechat&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2017-04-03T18:54:01+08:00 ] 110.184.70.164 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-04-03T20:01:00+08:00 ] 101.226.66.181 /index.php?m%253D%2526c%253DTg%2526a%253Dindex%2526keyword%253D%2526startime%253D2017-04-03%25252000:00:00%2526endtime%253D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-04-03T20:20:08+08:00 ] 108.162.246.234 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载控制器:Robots.txt
+
+[ 2017-04-03T20:41:21+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T20:41:21+08:00 ] 182.131.12.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+
+[ 2017-04-03T20:41:21+08:00 ] 117.175.88.50 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-03T20:41:21+08:00 ] 110.184.70.164 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-04-03T20:41:39+08:00 ] 110.184.70.164 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-04-03T20:41:40+08:00 ] 182.131.12.12 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+
+[ 2017-04-03T20:57:12+08:00 ] 121.234.247.193 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-04-03T20:57:12+08:00 ] 121.234.247.193 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-04-03T20:57:25+08:00 ] 121.234.247.193 /index.php?m=&c=login&a=verify&1491224245111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-04-03T20:57:41+08:00 ] 121.234.247.193 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-04-03T20:57:41+08:00 ] 121.234.247.193 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-04-03T20:57:46+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index&startime=2017-04-02%2000:00:00&endtime=2017-04-03%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-04-03T20:57:54+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index&startime=2017-04-02%2000:00:00&endtime=2017-04-03%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-04-03T20:57:55+08:00 ] 101.226.33.203 /index.php?m=&c=Tg&a=index&startime=2017-04-02%2000:00:00&endtime=2017-04-03%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-04-03T20:57:56+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+
+[ 2017-04-03T20:57:59+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+
+[ 2017-04-03T20:58:00+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index&startime=2017-04-02%2000:00:00&endtime=2017-04-03%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+
+[ 2017-04-03T20:58:06+08:00 ] 101.226.66.177 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-04-03T20:58:09+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-04-03T20:58:10+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index&startime=2017-04-02%2000:00:00&endtime=2017-04-03%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2017-04-03T20:58:13+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-04-03T20:58:15+08:00 ] 121.234.247.193 /index.php?m=&c=Tg&a=index&startime=2017-04-02%2000:00:00&endtime=2017-04-03%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T21:24:19+08:00 ] 119.90.72.103 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-04-03T21:24:19+08:00 ] 119.90.72.103 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T21:32:59+08:00 ] 119.90.72.103 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-04-03T21:33:02+08:00 ] 119.90.72.103 /index.php?m=&c=Tg&a=add_domain_log&group_domain=www.wxase.cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-04-03T21:37:03+08:00 ] 119.90.72.103 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-03T21:42:17+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T21:42:17+08:00 ] 117.175.88.50 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T21:42:17+08:00 ] 182.140.177.167 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-04-03T21:42:19+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-04-03T21:43:40+08:00 ] 101.71.55.120 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-04-03T21:49:12+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-03T21:49:15+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-04-03T21:49:23+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T21:49:25+08:00 ] 182.131.12.12 /index.php?m=&c=Tg&a=add_domain_log&group_domain=www.wxase.cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-04-03T21:50:31+08:00 ] 180.153.214.192 /index.php?m%3D%26c%3DTg%26a%3Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-04-03T22:33:23+08:00 ] 108.162.245.137 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-03T22:57:25+08:00 ] 182.131.12.12 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T22:57:25+08:00 ] 182.140.184.88 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T22:57:25+08:00 ] 223.85.132.35 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-04-03T22:57:26+08:00 ] 110.184.70.164 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-04-03T22:57:38+08:00 ] 110.184.70.164 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-04-03T22:57:38+08:00 ] 182.131.12.12 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T22:57:48+08:00 ] 101.226.69.246 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-03T22:57:48+08:00 ] 140.207.124.105 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-04-03T22:58:04+08:00 ] 120.83.97.239 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+
+[ 2017-04-03T22:59:47+08:00 ] 101.226.61.207 /index.php?m%3D%26c%3Dlogin%26a%3Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+
+[ 2017-04-03T23:11:56+08:00 ] 101.226.64.174 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+
+[ 2017-04-03T23:12:06+08:00 ] 140.207.185.111 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T23:31:58+08:00 ] 119.90.72.103 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-04-03T23:32:02+08:00 ] 119.90.72.103 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-04-03T23:32:02+08:00 ] 119.90.72.103 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-04-03T23:33:07+08:00 ] 119.90.72.103 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-04-03T23:33:08+08:00 ] 119.90.72.103 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-04-03T23:34:32+08:00 ] 119.90.72.103 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+
+[ 2017-04-03T23:34:36+08:00 ] 119.90.72.103 /index.php?m=&c=Tg&a=add_domain_log&group_domain=www.wapes.cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-03T23:51:12+08:00 ] 119.90.72.103 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-03T23:52:57+08:00 ] 140.207.185.111 /index.php?m%3DLn%26c%3DTg%26a%3Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-04-03T23:57:17+08:00 ] 116.31.126.105 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-04-03T23:57:26+08:00 ] 58.211.2.60 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+

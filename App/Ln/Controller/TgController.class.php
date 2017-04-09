@@ -116,19 +116,23 @@ class TgController extends ComController
             } elseif ($value['gid'] == 1) {
                 $where .= ' AND account>=1';
             } elseif ($value['gid'] == 2 && !in_array($value['cid'], $Super_list)) {//次一级推广
-                $title_kz = '<font color="red">(次一级推广)</font>';
+              	if ($ajax) {  
+              		$title_kz = '<font color="red">(次一级推广)</font>';
+              	}else{//次一级推广商 获取上级
+                	$Superior = M('member')->field('user')->where("uid={$value['cid']}")->find();
+					$list[$key]['user'] .= '<font color="red">(上级推广：'.$Superior["user"].')</font>';
+                }
                 $where .= " AND account>=1 AND ref1_id={$value['uid']}";
             } elseif ($value['gid'] == 2) {
                 $ci_fsum = $this->countUserMoney($value['uid'], $pWhere);//获取次一级下的充值
                 $where .= " AND account>=1 AND ref1_id={$value['uid']}";
                 $ksum = M('pay_log')->where("account=2 AND ref1_id={$value['uid']}" . $pWhere)->sum('pay_amount');
-
             } elseif ($value['gid'] == 3) {
                 $where .= " AND account=1 AND ref2_id={$value['uid']}";
             } elseif ($value['gid'] === 0) {
                 $where .= " AND account>=1 AND ref1_id=0 AND ref1_id='' AND ref1_id IS NULL";
             }
-
+			
             $rcount = M('register_log')->where($where . $regWhere)->count();
             $pcount = M('pay_log')->where($where . $pWhere)->count();
             $fsum = M('pay_log')->where($where . $pWhere)->sum('pay_amount');
@@ -137,8 +141,8 @@ class TgController extends ComController
             if ($ajax) {
                 empty($fsum) && $fsum = 0;
                 $html .= '<tr class="child_' . $user['uid'] . '">';
-                $html .= '<td>&nbsp;&nbsp;&nbsp;&nbsp;' . $value['uid'] . '</td>';
-                $html .= '<td>&nbsp;&nbsp;--&nbsp;' . $value['user'] . $title_kz . '</td>';
+                $html .= '<td>&para;&minus;&minus;' . $value['uid'] . '</td>';
+                $html .= '<td>&para;&minus;&minus;' . $value['user'] . $title_kz . '</td>';
                 $html .= '<td>' . $rcount . '</td>';
                 $html .= '<td>' . $pcount . '</td>';
                 $html .= '<td>&yen;' . $fsum . '</td>';
@@ -175,7 +179,7 @@ class TgController extends ComController
 	
 	public function user()
     {
-        $prefix = C('DB_PREFIX');
+		$prefix = C('DB_PREFIX');
 		$where='1=1';
         $regWhere = $pWhere = '';
         $loginuser = $this->getuserid();
@@ -186,12 +190,19 @@ class TgController extends ComController
             $user = M('auth_group_access')->field('uid,group_id as gid')->where("uid={$uid}")->find();
         }
 
-		if ($user['gid'] == 1) {
-			$where .= " AND ref2_id={$user['uid']})";
-		} else {
-			$where .= " AND (ref1_id={$user['uid']} OR ref2_id={$user['uid']})";
-		}
-		$day_num=isset($_GET['day_num'])?$_GET['day_num']:2;
+        $total = [];
+        $ajax = empty(I('get.ajax')) ? 0 : I('get.ajax');
+        if ($ajax) {
+            $limit = '';
+            $where .= " AND {$prefix}member.cid={$user['uid']}";
+        } else {
+            if ($user['gid'] == 1) {
+                $where .= " AND ref2_id={$user['uid']})";
+            } else {
+                $where .= " AND (ref1_id={$user['uid']} OR ref2_id={$user['uid']})";
+            }
+        }
+		$day_num=isset($_GET['day_num'])?$_GET['day_num']:7;
 		$startime=strtotime(date('Y-m-d',strtotime("-1 day")));
 		$endtime=strtotime(date('Y-m-d',strtotime("+1 day")));
 		if($day_num==7){
@@ -1084,14 +1095,14 @@ class TgController extends ComController
         $url = 'http://' . $group_domain. '/' . $time . '/' . $uid . '_'.rand(10,100).'.jpg';
         $share_url = C('SHARE_URL') . "?uid={$uid}&url={$group_domain}";
         // 短连接
-        if (S('url') == $group_domain && S('uidd') == $uid) {
+        if (S('share_url_domain') == $group_domain && S('share_url_uid') == $uid) {
             $shorturl = S('shorturl');
         } else {
-            S('url', $group_domain);
-            S('uid', $uid);
-            $content = file_get_contents("http://api.t.sina.com.cn/short_url/shorten.json?source=3213676317&url_long=" . $url);
+            S('share_url_domain', $group_domain);
+            S('share_url_uid', $uid);//  3213676317
+            $content = file_get_contents("http://api.t.sina.com.cn/short_url/shorten.json?source=31641035&url_long=" . $url);
             $shorturl = json_decode($content, true)[0]['url_short'];
-            S('shorturl', $shorturl);
+			S('shorturl', $shorturl);
         }
         $generalize = array('url' => $url, 'shorturl' => $shorturl, 'share_url' => $share_url, 'source_url' => 'http://' . $group_domain, 'churl' => $uid . '_' . $group_domain);
         $data["group_domain"] = $group_domain;

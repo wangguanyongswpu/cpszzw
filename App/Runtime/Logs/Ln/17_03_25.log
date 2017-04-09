@@ -1,0 +1,137 @@
+[ 2017-03-25T22:53:28+08:00 ] 103.226.199.152 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-03-25T22:53:29+08:00 ] 103.226.199.152 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-25T22:53:29+08:00 ] 103.226.199.152 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-03-25T22:55:29+08:00 ] 103.226.199.152 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-03-25T22:55:32+08:00 ] 103.226.199.152 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-03-25T22:55:50+08:00 ] 103.226.199.152 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-03-25T22:55:54+08:00 ] 103.226.199.152 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-03-25T22:56:15+08:00 ] 103.226.199.152 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+
+[ 2017-03-25T22:56:17+08:00 ] 103.226.199.152 /index.php?m=&c=Tg&a=generalize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-03-25T22:56:18+08:00 ] 103.226.199.152 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+
+[ 2017-03-25T22:56:19+08:00 ] 103.226.199.152 /index.php?m=&c=Tg&a=index&startime=2017-03-24+00%3A00%3A00&endtime=2017-03-25+00%3A00%3A00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-03-25T22:56:20+08:00 ] 103.226.199.152 /index.php?m=&c=Member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-03-25T22:56:23+08:00 ] 103.226.199.152 /index.php?m=&c=personal&a=profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-03-25T22:56:29+08:00 ] 61.151.218.118 /index.php?m=&c=Tg&a=index&startime=2017-03-24+00%3A00%3A00&endtime=2017-03-25+00%3A00%3A00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-03-25T22:56:31+08:00 ] 101.226.66.187 /index.php?m=&c=tg&a=index&startime=2017-03-24+00%3a00%3a00&endtime=2017-03-25+00%3a00%3a00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-03-25T22:56:33+08:00 ] 103.226.199.152 /index.php?m=&c=personal&a=profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-03-25T22:56:36+08:00 ] 103.226.199.152 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-03-25T22:57:07+08:00 ] 103.226.199.152 /index.php?m=&c=Member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-03-25T22:57:29+08:00 ] 103.226.199.152 /index.php?m=&c=logout&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-03-25T22:57:29+08:00 ] 103.226.199.152 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+
+[ 2017-03-25T22:57:29+08:00 ] 103.226.199.152 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-03-25T22:57:39+08:00 ] 101.226.66.177 /index.php?m=&c=logout&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+
+[ 2017-03-25T22:57:49+08:00 ] 103.226.199.152 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-03-25T22:57:49+08:00 ] 103.226.199.152 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+
+[ 2017-03-25T22:58:09+08:00 ] 103.226.199.152 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cps.qw_ip_count' doesn't exist
+
+[ 2017-03-25T22:58:19+08:00 ] 101.226.33.202 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2017-03-25T22:58:21+08:00 ] 103.226.199.152 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+

@@ -1,0 +1,784 @@
+[ 2017-04-01T00:30:23+08:00 ] 101.226.65.105 /index.php?m%25252525253D%252525252526c%25252525253DPersonal%252525252526a%25252525253Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-04-01T00:45:47+08:00 ] 58.211.2.30 /index.php?m%25253D%252526c%25253Dlogin%252526a%25253Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-01T01:22:46+08:00 ] 112.90.82.218 /index.php?m%3D%26c%3DPayWechat%26a%3Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-04-01T01:22:55+08:00 ] 101.226.33.221 /index.php?m%3D%26c%3DPayWechat%26a%3Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-01T04:22:08+08:00 ] 101.226.64.174 /index.php?m%2525252525253D%25252525252526c%2525252525253DPersonal%25252525252526a%2525252525253Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-04-01T04:22:17+08:00 ] 101.226.33.240 /index.php?m%2525252525253D%25252525252526c%2525252525253DPersonal%25252525252526a%2525252525253Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-04-01T04:29:37+08:00 ] 58.211.2.42 /index.php?m%2525253D%25252526c%2525253Dlogin%25252526a%2525253Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+
+[ 2017-04-01T04:57:07+08:00 ] 101.71.55.105 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+
+[ 2017-04-01T05:18:26+08:00 ] 101.71.55.120 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2017-04-01T05:18:27+08:00 ] 101.71.55.120 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+
+[ 2017-04-01T05:25:42+08:00 ] 108.162.245.137 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-04-01T06:31:46+08:00 ] 61.151.217.45 /index.php?m%252525252525253D%2525252525252526c%252525252525253DPersonal%2525252525252526a%252525252525253Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2017-04-01T07:09:06+08:00 ] 101.226.89.116 /index.php?m%253D%2526c%253DPayWechat%2526a%253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-01T07:26:25+08:00 ] 58.211.2.126 /index.php?m%252525253D%2525252526c%252525253Dlogin%2525252526a%252525253Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-01T07:34:08+08:00 ] 42.236.93.71 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-04-01T07:34:09+08:00 ] 42.236.93.76 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2017-04-01T07:57:13+08:00 ] 58.211.2.24 /a/product/67986.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T08:15:06+08:00 ] 58.211.2.12 /a/cnews/41224.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T08:15:32+08:00 ] 58.211.2.24 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-01T08:15:33+08:00 ] 58.211.2.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-04-01T08:15:33+08:00 ] 58.211.2.78 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-01T08:15:33+08:00 ] 58.211.2.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-04-01T08:15:34+08:00 ] 58.211.2.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-04-01T08:48:40+08:00 ] 101.226.33.239 /index.php?m%25252525252525253D%252525252525252526c%25252525252525253DPersonal%252525252525252526a%25252525252525253Dprofile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+
+[ 2017-04-01T09:06:24+08:00 ] 101.226.125.111 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2017-04-01T09:41:08+08:00 ] 101.226.69.246 /index.php?m%25253D%252526c%25253DPayWechat%252526a%25253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-04-01T09:48:02+08:00 ] 117.139.128.169 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2017-04-01T09:48:03+08:00 ] 117.139.128.169 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+
+[ 2017-04-01T09:48:03+08:00 ] 117.139.128.169 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-04-01T09:48:04+08:00 ] 117.139.128.169 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-04-01T09:48:18+08:00 ] 117.139.128.169 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-04-01T09:48:18+08:00 ] 117.139.128.169 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-04-01T09:48:20+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cps.qw_pay_log.pay_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+[ 2017-04-01T09:48:30+08:00 ] 180.163.1.46 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-04-01T09:48:41+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cps.qw_pay_log.pay_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+[ 2017-04-01T09:50:13+08:00 ] 58.211.2.138 /a/product/25799.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T09:52:19+08:00 ] 58.211.2.126 /index.php?m%25252525253D%252525252526c%25252525253Dlogin%252525252526a%25252525253Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-04-01T09:53:49+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cps.qw_pay_log.pay_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+[ 2017-04-01T09:53:55+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cps.qw_pay_log.pay_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+[ 2017-04-01T09:54:34+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-04-01T09:54:34+08:00 ] 117.139.128.169 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-04-01T09:55:32+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2017-04-01T09:56:02+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cps.qw_pay_log.pay_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+[ 2017-04-01T09:56:14+08:00 ] 180.153.214.178 /index.php?m=&c=tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-04-01T09:59:06+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cps.qw_pay_log.pay_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+[ 2017-04-01T10:03:35+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=horastr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-04-01T10:03:35+08:00 ] 117.139.128.169 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2017-04-01T10:15:59+08:00 ] 58.211.2.114 /a/product/67986.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T10:17:30+08:00 ] 58.211.2.114 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-01T10:24:18+08:00 ] 122.96.40.51 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-01T10:24:18+08:00 ] 122.96.40.51 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+
+[ 2017-04-01T10:24:54+08:00 ] 122.96.40.51 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+
+[ 2017-04-01T10:24:55+08:00 ] 122.96.40.51 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-04-01T10:25:00+08:00 ] 122.96.40.51 /index.php?m=&c=Tg&a=index&startime=2017-03-31%2000:00:00&endtime=2017-04-01%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+
+[ 2017-04-01T10:25:10+08:00 ] 101.226.66.177 /index.php?m=&c=Tg&a=index&startime=2017-03-31%2000:00:00&endtime=2017-04-01%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+
+[ 2017-04-01T10:25:31+08:00 ] 122.96.40.51 /index.php?m=&c=Tg&a=index&startime=2017-03-31%2000:00:00&endtime=2017-04-01%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+
+[ 2017-04-01T10:25:34+08:00 ] 122.96.40.51 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-04-01T10:25:53+08:00 ] 180.163.2.118 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-04-01T10:26:00+08:00 ] 122.96.40.51 /index.php?m=&c=personal&a=profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2017-04-01T10:26:10+08:00 ] 180.153.214.192 /index.php?m=&c=personal&a=profile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+
+[ 2017-04-01T10:39:49+08:00 ] 58.211.2.42 /a/focus/12140.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T10:40:45+08:00 ] 108.162.245.137 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+
+[ 2017-04-01T10:50:57+08:00 ] 140.207.124.105 /index.php?m%25252525253D%252525252526c%25252525253DPayWechat%252525252526a%25252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-01T11:01:02+08:00 ] 117.139.128.169 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+
+[ 2017-04-01T11:01:03+08:00 ] 117.139.128.169 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-01T11:01:06+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+
+[ 2017-04-01T11:01:16+08:00 ] 180.153.214.191 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2017-04-01T11:03:08+08:00 ] 117.139.128.169 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-04-01T11:03:08+08:00 ] 117.139.128.169 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-04-01T11:03:09+08:00 ] 117.139.128.169 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-04-01T11:08:37+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2017-04-01T11:11:36+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+
+[ 2017-04-01T11:15:32+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-04-01T11:29:02+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-04-01T11:29:03+08:00 ] 117.139.128.169 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+
+[ 2017-04-01T11:32:10+08:00 ] 116.31.126.101 /a/product/63525.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T11:32:19+08:00 ] 58.211.2.24 /a/product/63525.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T11:41:53+08:00 ] 117.139.128.169 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-04-01T11:47:53+08:00 ] 117.139.128.169 /index.php?m=&c=logout&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-04-01T11:47:54+08:00 ] 117.139.128.169 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2017-04-01T11:47:54+08:00 ] 117.139.128.169 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-01T11:47:59+08:00 ] 117.139.128.169 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-04-01T11:48:00+08:00 ] 117.139.128.169 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-04-01T11:48:03+08:00 ] 61.151.226.199 /index.php?m=&c=logout&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+
+[ 2017-04-01T11:48:06+08:00 ] 61.151.226.202 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-01T11:48:09+08:00 ] 101.226.65.104 /index.php?m=&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-04-01T11:48:19+08:00 ] 117.139.128.169 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-04-01T11:48:20+08:00 ] 117.139.128.169 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-04-01T11:48:32+08:00 ] 101.226.66.191 /index.php?m=ln&c=tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+
+[ 2017-04-01T11:49:30+08:00 ] 117.139.128.169 /index.php?m=&c=Setting&a=setting
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-04-01T11:49:40+08:00 ] 140.207.185.112 /index.php?m=&c=Setting&a=setting
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-04-01T11:54:54+08:00 ] 117.139.128.169 /index.php?m=&c=Notice&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-04-01T11:55:06+08:00 ] 101.226.69.246 /index.php?m=&c=notice&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-04-01T11:55:10+08:00 ] 180.153.205.254 /index.php?m=&c=Notice&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-04-01T12:02:52+08:00 ] 116.31.126.101 /a/product/25886.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T12:10:37+08:00 ] 58.211.2.126 /20565
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载控制器:20565
+
+[ 2017-04-01T12:25:11+08:00 ] 42.236.93.51 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-04-01T12:36:38+08:00 ] 101.226.64.174 /index.php?m%3D%26c%3Dlogin%26a%3Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-04-01T13:00:42+08:00 ] 101.71.55.90 /39588/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+ERR: 无法加载控制器:39588
+
+[ 2017-04-01T13:00:42+08:00 ] 101.71.55.85 /a/focus/37101.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:00:42+08:00 ] 101.71.55.90 /a/product/67794.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:00:42+08:00 ] 101.71.55.90 /154/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+ERR: 无法加载控制器:154
+
+[ 2017-04-01T13:00:42+08:00 ] 101.71.55.90 /96214/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+ERR: 无法加载控制器:96214
+
+[ 2017-04-01T13:00:42+08:00 ] 101.71.55.85 /a/focus/56804.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:00:42+08:00 ] 58.211.2.24 /a/cnews/68051.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:00:42+08:00 ] 101.71.55.90 /a/news/44309.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:00:43+08:00 ] 101.71.55.85 /11107/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+ERR: 无法加载控制器:11107
+
+[ 2017-04-01T13:00:43+08:00 ] 101.71.55.90 /11061/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+ERR: 无法加载控制器:11061
+
+[ 2017-04-01T13:00:43+08:00 ] 101.71.55.90 /a/product/23292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:00:43+08:00 ] 58.211.2.24 /a/product/17622.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:00:43+08:00 ] 101.71.55.90 /67438/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+ERR: 无法加载控制器:67438
+
+[ 2017-04-01T13:00:43+08:00 ] 101.71.55.85 /a/product/59512.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:00:43+08:00 ] 101.71.55.90 /a/focus/59980.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T13:16:49+08:00 ] 58.211.2.54 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-04-01T13:31:12+08:00 ] 58.211.2.30 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-04-01T13:33:59+08:00 ] 58.211.2.84 /a/focus/12140.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T14:53:47+08:00 ] 180.153.214.180 /index.php?m%253D%2526c%253Dlogin%2526a%253Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-01T15:49:43+08:00 ] 116.31.126.106 /96214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载控制器:96214
+
+[ 2017-04-01T15:49:52+08:00 ] 58.211.2.72 /96214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+ERR: 无法加载控制器:96214
+
+[ 2017-04-01T15:51:30+08:00 ] 58.211.2.24 /a/product/67794.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T15:59:52+08:00 ] 58.211.2.30 /a/cnews/68051.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T16:02:40+08:00 ] 58.211.2.24 /11061
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+ERR: 无法加载控制器:11061
+
+[ 2017-04-01T16:03:31+08:00 ] 116.31.126.102 /39588
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载控制器:39588
+
+[ 2017-04-01T16:03:40+08:00 ] 58.211.2.24 /39588
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载控制器:39588
+
+[ 2017-04-01T16:24:07+08:00 ] 58.211.2.114 /a/news/44309.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T16:24:48+08:00 ] 116.31.126.101 /a/product/23292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T16:24:57+08:00 ] 58.211.2.12 /a/product/23292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T16:24:57+08:00 ] 58.211.2.24 /a/product/59512.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T16:29:51+08:00 ] 122.96.40.51 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2017-04-01T16:29:51+08:00 ] 122.96.40.51 /index.php?m=&c=login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-04-01T16:30:14+08:00 ] 122.96.40.51 /index.php?m=&c=login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-04-01T16:30:14+08:00 ] 122.96.40.51 /index.php?m=Ln&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+
+[ 2017-04-01T16:30:18+08:00 ] 122.96.40.51 /index.php?m=&c=Tg&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-04-01T16:30:21+08:00 ] 122.96.40.51 /index.php?m=&c=Tg&a=index&startime=2017-03-31%2000:00:00&endtime=2017-04-01%2000:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+
+[ 2017-04-01T18:29:34+08:00 ] 116.31.126.101 /67438
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+ERR: 无法加载控制器:67438
+
+[ 2017-04-01T18:29:41+08:00 ] 58.211.2.84 /67438
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+ERR: 无法加载控制器:67438
+
+[ 2017-04-01T18:29:51+08:00 ] 58.211.2.114 /a/product/67794.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T18:34:01+08:00 ] 101.226.66.173 /index.php?m%25253D%252526c%25253Dlogin%252526a%25253Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-04-01T19:12:33+08:00 ] 58.211.2.114 /11061
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载控制器:11061
+
+[ 2017-04-01T19:19:16+08:00 ] 58.211.2.30 /a/product/23292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载控制器:A
+
+[ 2017-04-01T19:31:49+08:00 ] 101.226.65.104 /index.php?m%3D%26c%3DTg%26a%3Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+
+[ 2017-04-01T19:35:55+08:00 ] 58.211.2.24 /39588
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+ERR: 无法加载控制器:39588
+
+[ 2017-04-01T20:27:58+08:00 ] 110.184.70.164 /index.php?m=&c=PayWechat&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2017-04-01T20:27:58+08:00 ] 110.184.70.164 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-04-01T21:47:04+08:00 ] 101.226.66.193 /index.php?m%2525253D%25252526c%2525253Dlogin%25252526a%2525253Dverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-04-01T21:53:50+08:00 ] 116.31.126.154 /11061
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+ERR: 无法加载控制器:11061
+
+[ 2017-04-01T23:35:07+08:00 ] 101.226.125.103 /index.php?m%253D%2526c%253DTg%2526a%253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+

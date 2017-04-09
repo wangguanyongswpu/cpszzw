@@ -135,9 +135,9 @@ class ComController extends BaseController
         $this->assign('menu', $menu);
 		
 		//获取公告
-		$notice = M('article')->field('aid,content')->where('sid=15000')->order('aid desc')->limit(5)->select();
-		$this->assign('notice_list_bool', count($notice)>0?true:false);
-        $this->assign('notice_list', $notice);
+		//$notice = M('article')->field('aid,content')->where('sid=15000')->order('aid desc')->limit(5)->select();
+		//$this->assign('notice_list_bool', count($notice)>0?true:false);
+        //$this->assign('notice_list', $notice);
 
     }
 

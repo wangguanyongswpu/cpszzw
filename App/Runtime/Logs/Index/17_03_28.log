@@ -1,0 +1,50 @@
+[ 2017-03-28T01:23:48+08:00 ] 101.71.55.95 /index/cache/get_tghb.html?group_domain%2525253Dwww.wxase.cn%25252526url%2525253D8386_www.wxase.cn%25252526uid%2525253D8386
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-03-28T05:20:16+08:00 ] 58.211.2.120 /index/cache/get_tghb.html?group_domain%252525253Dwww.wxase.cn%2525252526url%252525253D8386_www.wxase.cn%2525252526uid%252525253D8386
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-03-28T06:59:40+08:00 ] 122.190.2.42 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2017-03-28T07:42:28+08:00 ] 58.211.2.150 /index/cache/get_tghb.html?group_domain%25252525253Dwww.wxase.cn%252525252526url%25252525253D8386_www.wxase.cn%252525252526uid%25252525253D8386
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-03-28T10:20:31+08:00 ] 58.211.2.120 /index/cache/get_tghb.html?group_domain%2525252525253Dwww.wxase.cn%25252525252526url%2525252525253D8386_www.wxase.cn%25252525252526uid%2525252525253D8386
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+
+[ 2017-03-28T10:20:38+08:00 ] 101.71.55.95 /index/cache/get_tghb.html?group_domain%2525252525253Dwww.wxase.cn%25252525252526url%2525252525253D8386_www.wxase.cn%25252525252526uid%2525252525253D8386
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-03-28T12:46:09+08:00 ] 122.190.2.42 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-03-28T12:48:59+08:00 ] 122.190.2.72 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+
+[ 2017-03-28T14:45:20+08:00 ] 58.211.2.120 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-03-28T18:32:45+08:00 ] 58.211.2.126 /index/cache/get_tghb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+

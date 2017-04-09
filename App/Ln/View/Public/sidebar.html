@@ -60,17 +60,19 @@
             </a>
         </li>
         <li>
-            <a href="{:U('Tg/user')}">
+            <a href="{:U('Tg/index')}">
                 <i class="menu-icon fa fa-th-list"></i>
                 <span class="menu-text">充值列表</span>
             </a>
         </li>
+		<?php if($user['gid'] == 2){ ?>
         <li>
             <a  href="{:U('Member/index')}" >
                 <i class="menu-icon fa fa-renren"></i>
                 <span class="menu-text">推广商</span>
             </a>
         </li>
+		<?php } ?>
         <li >
             <a href="{:U('personal/profile')}">
                 <i class="menu-icon fa fa-user"></i>
